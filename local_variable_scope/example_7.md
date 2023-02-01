@@ -16,4 +16,4 @@ On line 7, `a` is re-assigned to the string `'Bill'`. Since `a` is re-assigned w
 
 On line 10, we invoke the `p` method and pass in `a` as an argument. Since `a` was re-assigned to the string `'Bill'`; this is the output. The `p` method returns the string `'Bill'`.
 
-This problem demonstrates variable local scoping rules. With blocks, inner scope can access variables initialized in an outer scope, but not vice versa. As long as block immediately follows a method invocation; these rules apply.
+This problem demonstrates variable local scoping rules. With blocks, inner scope can access variables initialized in an outer scope, but not vice versa. These scoping rules apply as long as block immediately follows a method invocation. 
