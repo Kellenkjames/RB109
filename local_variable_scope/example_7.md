@@ -12,7 +12,7 @@ p a
 
 On line 4, the local variable `a` is initialized and assigned to the string `'Bob'`. The `do...end` alongside the `times` method invocation on lines 6-8 defines a block and introduces a new scope.
 
-On line 7, `a` is re-assigned to the string `'Bill'`. Since `a` is re-assigned within the `times` method and `5` is the calling object; `a` is re-assigned to `Bill` a total of `5 ` times. The return value of the method is `5`.
+On line 7, `a` is re-assigned to the string `'Bill'`. Since `a` is re-assigned within the `times` method and `5` is the calling object; `a` is re-assigned to `Bill` a total of `5 ` times. The method returns `5`.
 
 On line 10, we invoke the `p` method and pass in `a` as an argument. Since `a` was re-assigned to the string `'Bill'`; this is the output. The `p` method returns the string `'Bill'`.
 

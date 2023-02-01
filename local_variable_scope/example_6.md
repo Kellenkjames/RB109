@@ -22,9 +22,11 @@ On line 6, the local variable `sum` is initialized and assigned to the integer `
 
 The `do...end` alongside the `loop` method invocation on lines 8-12 defines a block and introduces a new scope. On line 9, `sum` uses the shorthand operator to add its initial value; `0`, to each `arr` element and re-assigns the total back to `sum`.
 
-On line 10, `counter` uses the shorthand operator to add its initial value; `0`, to `1` on each iteration of the loop and re-assigns the total back to `counter`. On line 11, the `loop` will break after `4` iterations; same count as the size of `arr`. The `loop` method returns `nil`.
+On line 10, `counter` uses the shorthand operator to add its initial value; `0`, to `1` on each iteration of the loop and re-assigns the total back to `counter`. On line 11, the `loop` will break after `4` iterations; same number of iterations as the size of `arr`. 
+
+The `loop` method returns `nil`.
 
 On line 14, we invoke the `puts` method and pass a string in as an argument. 
-The output is: `"Your total is 10"`. The method returns nil.
+The output is: `"Your total is 10"`. The method returns `nil`.
 
 This problem demonstrates variable local scoping rules. From inside the block, you can access variables that were initialized outside the block; in this case; we have access to `arr`, `counter`, and `sum` inside the block.

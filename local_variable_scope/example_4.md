@@ -23,7 +23,7 @@ On line 7, we invoke the `puts` method and pass in `str` as an argument which is
 
 On line 8, `i` uses the shorthand operator to subtract `1` from the initialized value `3` and re-assign the new value back to `i` on each iteration.
 
-The `loop` will iterate `3` times before breaking out of the loop. The output is `'hello'` printed three times; each string on a newline. The return value of the method is `nil`.
+The `loop` will iterate `3` times before breaking out of the loop. The output is `'hello'` printed three times; each string on a newline. The method returns `nil`.
 
 This problem demonstrates variable local scope rules. A method definition has it's own self-contained scope but follows the rules of variable local scope. The counter variable `i` is accessible throughout the method because it was initialized outside of the block. 
 
