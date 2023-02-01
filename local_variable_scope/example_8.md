@@ -19,7 +19,7 @@ On line 7, `animal` is re-assigned to the string `"cat"`. On line 8, the local v
 
 On line 12, we invoke the `puts` method and pass in `animal` as an argument. Since `animal` was re-assigned to the string `"cat"` on line 7; this is the output. The method returns `nil`.
 
-On line 13, we invoke the `puts` method and pass in `var` as an argument. Since `var` was initialized inside the block, we get the following error: `<main>': undefined local variable or method`var' for main:Object (NameError); from outside the block, we can't access any variables that were initialized inside the block.
+On line 13, we invoke the `puts` method and pass in `var` as an argument. Since `var` was initialized inside the block, we get the following error: `undefined local variable or method 'var' for main:Object`. This means `var` is not accessible from outside the block since it was initialized from inside the block.
 
 This problem demonstrates variable local scoping rules. With blocks, inner scope can access variables initialized in an outer scope, but not vice versa.
 
