@@ -13,6 +13,8 @@ puts a
 puts b
 ```
 
+# Written Response
+
 On line 4, we initialize a local variable named `a` and assign to the integer `4`.
 On line 5, we initialize a local variable named `b` and assign to the integer `2`.
 
