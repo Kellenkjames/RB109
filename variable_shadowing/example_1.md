@@ -20,7 +20,7 @@ On line 5, we initialize a local variable named `b` and assign to the integer `2
 
 The `do...end` alongside the `times` method, on lines 7-10, defines a block and introduces a new scope. On line 8, we define `a` as the block parameter; the same name as the variable `a` initialized on line 5 (in the outer scope).
 
-On line 8 `a` is initialized to the integer `5` inside the block; it is not reassigned due to variable shadowing.
+On line 8 `a` is initialized to the integer `5` inside the block; re-assignment is ignored due to variable shadowing.
 
 The `times` method returns `2`.
 
