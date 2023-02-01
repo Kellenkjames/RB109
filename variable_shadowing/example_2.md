@@ -14,7 +14,7 @@ puts n
 
 On line 4, the local variable `n` is initialized and assigned to the integer `10`. The `do...end` alongside the `times` method invocation on lines 6-8 define a block and introduces a new scope. 
 
-On line 6, the block parameter is defined as `n`; the same variable name as `n` on line 4. Since the outer variable `n` on line 4 and the block parameter `n` on line 6 have the same name; `n` is initialized and assigned to the integer `11` on line 7; re-assignment is ignored due to variable shadowing.
+On line 6, the block parameter is defined as `n`; the same variable name as `n` on line 4. Since the outer variable `n` on line 4 and the block parameter `n` on line 6 have the same name; the local variable `n` is initialized and assigned to the integer `11` on line 7; re-assignment is ignored due to variable shadowing.
 
 The `times` method returns `1`; the calling object of the method.
 
