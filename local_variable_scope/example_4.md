@@ -15,7 +15,7 @@ example('hello')
 
 # Written Response:
 
-On line 4, we define a method definition called `example` that accepts a string argument; `str` is the defined method parameter. On line 13, we invoke the method `example` and pass in the string `'hello'` as an argument.
+On line 4, we define a method definition called `example` that accepts one argument as input; `str` is the defined method parameter. On line 13, we invoke the method `example` and pass in the string `'hello'` as an argument.
 
 On line 5, the local variable `i` is initialized and assigned to the integer `3`. The `do...end` alongside the `loop` method invocation on lines 6-10 defines a block and introduces a new scope.
 
