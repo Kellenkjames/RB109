@@ -11,7 +11,9 @@ puts b
 
 # Written Response:
 
-On line 4, the local variable `a` is initialized and assigned to the string `"Hello"`. On line 5, the local variable `b` is initialized and assigned to `a`. On line 6, `a` is re-assigned to the string `"Goodbye"`.
+On line 4, the local variable `a` is initialized and assigned to the string `"Hello"`. 
+On line 5, the local variable `b` is initialized and assigned to `a`. 
+On line 6, `a` is re-assigned to the string `"Goodbye"`.
 
 On line 8, we invoke the `puts` method and pass in `a` as an argument. Since we re-assigned `a` to the string `"Goodbye"` on line 6, this is the output. The return value is `nil`.
 

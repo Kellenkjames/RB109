@@ -16,7 +16,9 @@ puts b
 
 # Written Response:
 
-On line 4, the local variable `a` is initialized and assigned to the integer `4`. The `do...end` alongside the `loop` method invocation on lines 6-11 defines a block and introduces a new scope. On line 7 `a` is re-assigned to the integer `5`. On line 8, `b` is initialized and assigned to the integer `3`. The return value of the `loop` method is nil.
+On line 4, the local variable `a` is initialized and assigned to the integer `4`. 
+
+The `do...end` alongside the `loop` method invocation on lines 6-11 defines a block and introduces a new scope. On line 7 `a` is re-assigned to the integer `5`. On line 8, `b` is initialized and assigned to the integer `3`. The return value of the `loop` method is nil.
 
 On line 13, we invoke the `puts` method and pass in `a` as an argument. Since `a` was re-assigned to the integer `5` on line 7; this is the output. The return value is `nil`.
 
