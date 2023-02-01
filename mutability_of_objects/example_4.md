@@ -22,5 +22,4 @@ The return value of the method is a new array with the following string objects:
 
 If we called `map!` instead of `map` we would return the same value from the method; `["I like the letter: a, I like the letter: b, I like the letter: c"]` and the original calling object `a` will be permanently modified with the same values.
 
-This problem demonstrates object passing and mutating vs non-mutating methods. Arrays are mutable objects; when arrays are passed into a method as arguments; they can be mutated or not mutated. In this example we can see the difference between a non-mutating method; `.map`; and a mutating method; `.map!`; which have different side-effects on their calling objects.
-
+This problem demonstrates object passing and mutating vs non-mutating methods. Arrays are mutable objects; when arrays are passed into methods as arguments; they can be mutated or not mutated. In this example we can see the difference between a non-mutating method; `.map` vs. a mutating method; `.map!`; which have different side-effects on their calling objects.
