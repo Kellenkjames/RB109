@@ -10,7 +10,7 @@ word = "Hello"
 greetings(word)
 ```
 
-# Written Response:
+**# Written Response:
 
 On line 4, we define a method called `greetings` that accepts one argument as input. `str` is  defined as the method parameter.
 
@@ -22,7 +22,7 @@ On line 6, we invoke the `puts` method and pass in the string literal `"Goodbye"
 
 The return value of the `greetings` method is `nil`.
 
-This problem demonstrates variable local scope rules. In Ruby, methods have their own-self contained scope. Methods can't access any variables outside of the method definition unless data is passed into the method invocation as an argument.
+This problem demonstrates variable local scope rules. In Ruby, methods have their own-self contained scope. Methods can't access any variables outside of the method definition unless data is passed into the method invocation as an argument.**
 
 
 
