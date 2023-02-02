@@ -12,16 +12,15 @@ end
 puts animal
 puts var
 ```
+# Written Response:
 
-On line 4, the local variable `animal` is initialized and assigned to the string `"dog"`. The `do...end` alongside the `loop` method invocation on lines 6-10 defines a block and introduces a new scope.
+The local variable `animal` is initialized and assigned to the String `"dog"`. The `do...end` alongside the `loop` method invocation on lines 6-10 defines a block, within which `animal` is reassigned to the String `"cat"` on line 7. The local variable `var` is initialized and assigned to the String `"ball"`. The `loop` method returns `nil`.
 
-On line 7, `animal` is re-assigned to the string `"cat"`. On line 8, the local variable `var` is initialized and assigned to the string `"ball"`. The `loop` method returns `nil`.
+The `puts` method is called on line 12 and the variable `animal` is passed to it as an argument; since `animal` is now the String `"cat"`; this is what is output. The `puts` method is called on line 12 has the following output: `undefined local variable or method var' for main:Object`; since `var` was initialized inside the block; it's not accessible outside of the block.
 
-On line 12, we invoke the `puts` method and pass in `animal` as an argument. Since `animal` was re-assigned to the string `"cat"` on line 7; this is the output. The method returns `nil`.
+This problem demonstrates local variable scoping rules in Ruby; variables that are initialized from outside of a block are accessible inside of a block. However, when variables are initialized from inside the block, they are not accessible outside of the block.
 
-On line 13, we invoke the `puts` method and pass in `var` as an argument. Since `var` was initialized inside the block, we get the following error: `undefined local variable or method 'var' for main:Object`. This means `var` is not accessible from outside the block since it was initialized from inside the block.
 
-This problem demonstrates variable local scoping rules. With blocks, inner scope can access variables initialized in an outer scope, but not vice versa.
 
 
 
