@@ -16,9 +16,9 @@ puts b
 
 # Written Response:
 
-The local variable `a` is assigned to the Integer `4` on line 4. The local variable `b` is assigned to the Integer `2` on line 5.
+The local variable `a` is initialized and assigned to the Integer `4` on line 4. The local variable `b` is initialized and assigned to the Integer `2` on line 5.
 
-The `do...end` alongside the `loop` method invocation on lines 7-11 defines a block, which introduces a new scope. The local variable `c` is initialized inside the block and assigned to the Integer `3` on line 8. The variable `a` is reassigned to the variable `c`. The `loop` method returns `nil`.
+The `do...end` alongside the `loop` method invocation on lines 7-11 defines a block, which introduces a new scope. The local variable `c` is initialized and assigned to the Integer `3` on line 8. The variable `a` is reassigned to the variable `c`. The `loop` method returns `nil`.
 
 The `puts` method is called on line 13 with the variable `a` passed to it as an argument; since the variable `a` is now assigned to the variable `c` and the variable `c` is assigned to the Integer `3`; this is what is output.
 
