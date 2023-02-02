@@ -15,15 +15,10 @@ example('hello')
 
 # Written Response:
 
-On line 4, we define a method definition called `example` that accepts one argument as input; `str` is the defined method parameter. On line 13, we invoke the method `example` and pass in the string `'hello'` as an argument.
+The method `example` is called on line 13 with the String `'hello'` passed to it as an argument. The local variable `i` is assigned to the Integer `3` on line 5. The `do...end` alongside the `loop` method invocation on lines 6-10 defines a block, within which the `puts` method is called on line 7 and the local variable `str`; which is bound to the String `'hello'`; is passed to it as an argument.
 
-On line 5, the local variable `i` is initialized and assigned to the integer `3`. The `do...end` alongside the `loop` method invocation on lines 6-10 defines a block and introduces a new scope.
+The local variable `i` uses the subtract AND assignment operator on line 8 to subtract the Integer `1` from its initialized value `3` on each iteration. The `loop` will break when the variable `i` is equal to the Integer `0`; this results in `3` loop iterations. The method returns `nil`.
 
-On line 7, we invoke the `puts` method and pass in `str` as an argument which is bound to the string `hello` since it was passed in as an argument to the method invocation of `example`.
+This example demonstrates local variable scoping rules in Ruby; when working with method definitions; the same local variable scoping rules apply; when a variable is initialized from outside of a block; it can be accessed inside the block.
 
-On line 8, `i` uses the shorthand operator to subtract `1` from the initialized value `3` and re-assign the new value back to `i` on each iteration.
-
-The `loop` will iterate `3` times before breaking out of the loop. The output is `'hello'` printed three times; each string on a newline. The method returns `nil`.
-
-This problem demonstrates variable local scope rules. A method definition has it's own self-contained scope but follows the rules of variable local scope. The counter variable `i` is accessible throughout the method because it was initialized outside of the block. 
 

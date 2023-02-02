@@ -28,8 +28,3 @@ This example demonstrates local variable scoping rules in Ruby; specifically the
 
 
 
-
-
-
-
-
