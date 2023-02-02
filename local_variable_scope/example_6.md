@@ -16,17 +16,13 @@ puts "Your total is #{sum}"
 
 # Written Response:
 
-On line 4, the local variable `arr` is initialized and assigned to the array `[1, 2, 3, 4]`.
-On line 5, the local variable `counter` is initialized and assigned to the integer `0`.
-On line 6, the local variable `sum` is initialized and assigned to the integer `0`.
+The local variable `arr` is assigned to the Array `[1, 2, 3, 4]` on line 4. The local variable `counter` is initialized and assigned to the Integer `0` on line 5. The local variable `sum` is initialized and assigned to the Integer `0` on line 6.
 
-The `do...end` alongside the `loop` method invocation on lines 8-12 defines a block and introduces a new scope. On line 9, `sum` uses the shorthand operator to add its initial value; `0`, to each `arr` element and re-assigns the total back to `sum`.
+The `do...end` alongside the `loop` invocation method on lines 8-12 defines a block, within which the variable `sum` uses the add AND assignment operator to add the integer `0` to the value of each index of the array; starting from the `arr` index of `counter`; on each loop iteration.
 
-On line 10, `counter` uses the shorthand operator to add its initial value; `0`, to `1` on each iteration of the loop and re-assigns the total back to `counter`. On line 11, the `loop` will break after `4` iterations; same number of iterations as the size of `arr`. 
+The `counter` variable on line 10 uses the add AND assignment operator to add it's initial value `0` to the the Integer `1` on each loop iteration. The `break` condition on line 11 shows the loop will break once `counter` is equal to the size of the `arr`; this is the Integer `4`.
 
-The `loop` method returns `nil`.
+The `puts` method is called on line 14 with a String passed in as an argument; since the String uses interpolation for the variable `sum`; the output is `"Your total is 10"`. 
 
-On line 14, we invoke the `puts` method and pass a string in as an argument. 
-The output is: `"Your total is 10"`. The method returns `nil`.
 
-This problem demonstrates variable local scoping rules. From inside the block, you can access variables that were initialized outside the block; in this case; we have access to `arr`, `counter`, and `sum` inside the block.
+
