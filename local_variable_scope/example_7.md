@@ -9,11 +9,10 @@ end
 
 p a
 ```
+# Written Response:
 
-On line 4, the local variable `a` is initialized and assigned to the string `'Bob'`. The `do...end` alongside the `times` method invocation on lines 6-8 defines a block and introduces a new scope.
+The local variable `a` is initialized and assigned to the String `'Bob'` on line 4. The `do...end` alongside the `times` method invocation on lines 6-8 defines a block, within which `a` is reassigned to the String `'Bill'`. The `times` method iterates over the given block, passing in increasing values from the Integer `0` up to the calling object; `5` minus `1`; represented by the block parameter `x`. This results in `a` being reassigned to the String `"Bill"` a total of `5` times. The method returns the calling object; the Integer `5`.
 
-On line 7, `a` is re-assigned to the string `'Bill'`. Since `a` is re-assigned within the `times` method and `5` is the calling object; `a` is re-assigned to `Bill` a total of `5 ` times. The method returns `5`.
+The `p` method is called on line 10 and the variable `a` passed to it as an argument; since `a` is now the String `Bill`; this is the output and the return value of the `p` method.
 
-On line 10, we invoke the `p` method and pass in `a` as an argument. Since `a` was re-assigned to the string `'Bill'`; this is the output. The `p` method returns the string `'Bill'`.
 
-This problem demonstrates variable local scoping rules. With blocks, inner scope can access variables initialized in an outer scope, but not vice versa. These scoping rules apply as long as block immediately follows a method invocation. 
