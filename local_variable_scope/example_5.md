@@ -12,17 +12,11 @@ greetings(word)
 
 # Written Response:
 
-On line 4, we define a method called `greetings` that accepts one argument as input. `str` is  defined as the method parameter.
+The local variable `word` is assigned to the String `"Hello"` on line 9. The method `greetings` is called on line 10 with the variable `word` passed to it as an argument.
 
-On line 9, the local variable `word` is initialized and assigned to the string `"Hello"`. On line 10, we invoke the method `greetings` and pass in `word` as an argument.
+The `puts` method is called on line 5 with the local variable `str` passed to it as an argument; since the local variable `str` is bound to the String `"Hello"`; this is what is output. The `puts` method is called on line 6 with the String literal `"Goodbye"` passed to it as an argument; since the argument is the String literal `"Goodbye"`; this is what is output.
 
-On line 5, we invoke the `puts` method and pass in `str` as an argument; `str` is bound to the string `"Hello"` since it was passed in as an argument to the method invocation of `greetings`; therefore, the output is the string `"Hello"`. The method returns `nil`.
-
-On line 6, we invoke the `puts` method and pass in the string literal `"Goodbye"` as an argument; this is the output. The method returns `nil`.
-
-The return value of the `greetings` method is `nil`.
-
-This problem demonstrates variable local scope rules. In Ruby, methods have their own-self contained scope. Methods can't access any variables outside of the method definition unless data is passed into the method invocation as an argument.
+This problem demonstrates local variable scope rules in Ruby; When there is data outside of a method definition's scope, the data has to be passed in via arguments to access it within the method definition.
 
 
 
