@@ -16,16 +16,17 @@ puts b
 
 # Written Response:
 
-On line 4, the local variable `a` is initialized and assigned to the integer `4`.
-On line 5, the local variable `b` is initialized and assigned to the integer `2`.
+The local variable `a` is assigned to the Integer `4` on line 4. The local variable `b` is assigned to the Integer `2` on line 5.
 
-The `do...end` alongside the `loop` method invocation on lines 7-11 defines a block and introduces a new scope. On line 8, the local variable `c` is initialized and assigned to the integer `3`. On line 9, `a` is re-assigned to `c`. The `loop` method returns `nil`.
+The `do...end` alongside the `loop` method invocation on lines 7-11 defines a block, which introduces a new scope. The local variable `c` is initialized inside the block and assigned to the Integer `3` on line 8. The variable `a` is reassigned to the variable `c`. The `loop` method returns `nil`.
 
-On line 13, we invoke the `puts` method and pass in `a` in as an argument. Since `a` is re-assigned to `c` on line 9 and `c` was assigned to the integer `3` on line 8; the output is `3`. The method returns `nil`.
+The `puts` method is called on line 13 with the variable `a` passed to it as an argument; since the variable `a` is now assigned to the variable `c` and the variable `c` is assigned to the Integer `3`; this is what is output.
 
-On line 14, we invoke the `puts` method and pass in `b` in as an argument. The output is the integer `2`; same as the initialization value on line 2.
+The `puts` method is called on line 14 with the variable `b` passed to it as an argument; since the variable `b` is not reassigned anywhere in the program; it will output the initialized value; `2`.
 
-This problem demonstrates variable local scoping rules. From inside the block, you can access variables that were initialized outside of the block.
+This example demonstrates local variable scoping rules in Ruby; specifically the fact that variables initialized outside of a block are accessible inside of a block.
+
+
 
 
 
