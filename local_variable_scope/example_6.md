@@ -1,4 +1,4 @@
-**What does the following code return? What does it output? Why? What concept does it demonstrate?**
+****What does the following code return? What does it output? Why? What concept does it demonstrate?**
 
 ```ruby
 arr = [1, 2, 3, 4]
@@ -23,6 +23,3 @@ The `do...end` alongside the `loop` invocation method on lines 8-12 defines a bl
 The `counter` variable on line 10 uses the add AND assignment operator to add it's initial value `0` to the the Integer `1` on each loop iteration. The `break` condition on line 11 shows the loop will break once `counter` is equal to the size of the `arr`; this is the Integer `4`.
 
 The `puts` method is called on line 14 with a String passed in as an argument; since the String uses interpolation for the variable `sum`; the output is `"Your total is 10"`. 
-
-
-
