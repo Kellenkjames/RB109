@@ -11,12 +11,13 @@ test(test_str)
 puts test_str
 ```
 
-On line 9, we initialize the local variable `test_str` and assign it to the string `"Written Assessment'`. On line 10, we invoke the `test` method and pass in `test_str` as an argument.
+# Written Response:
 
-On line 5, the local variable `str` is initialized and bound to the object `'Written Assessment'` by default as this is the object that was passed into `test` as an argument. On the same line, `str` uses the shorthand operator to concatenate `"!"` to the object `'Written Assessment'` and reassign the string; `'Written Assessment!'` back to `str`.
+The local variable `test_str` is initialized and assigned to the String `'Written Assessment'` on line 9. The `test` method is called on line 10 with `test_str` passed to it as an argument.
 
-On line 6, we invoke the `downcase!` method (destructive) on the calling `str` object. The method returns `'written assessment!'`.
+The local variable `str` which is bound to the String `Written Assessment` uses shorthand reassignment to perform the following operation: `Written Assessment` + `"!"` and stores the value back to `str` on line 5.
 
-On line 11, we invoke the `puts` method and pass in `test_str` as an argument. Since we reassigned `str` on line 5; the variable changes the binding and the object the variable originally referenced it not mutated on line 6; therefore, the output is the same as the original object: `'Written Assessment`'. The method returns `nil`.
+`str` is now the String `'Written Assessment!'` and the `downcase!` method is called on the object on line 6.
 
-This problem demonstrates concepts of passing objects, reassignment, and mutability. In this example, we can see that strings are mutable objects and reassignment changes the binding of the variable. When a variable is reassigned before a mutating method is called on the object; it will not mutate the original object (before it was reassigned).
+The method returns `'written assessment!`. The `puts` method is called on line 11 and the variable `test_str` is passed to it as an argument; since `test_str` was reassigned in the method before it was mutated; the output is the original String; `Written Assessment`.
+
