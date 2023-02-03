@@ -10,10 +10,11 @@ c = a.uniq
 
 # Written Response:
 
-On line 4, `a` is initialized and assigned to the array `[1, 2, 3, 4]`; this is the return value. On line 5, `b` is initialized and assigned to `a`; the return value is the same as object as `a`.
+The local variable `a` is initialized and assigned to the Array `[1, 2, 3, 4]` on line 4. The local variable `b` is initialized and assigned to `a` on line 5. The local variable `c` is initialized and assigned to the variable `a` calling the `uniq` method.
 
-On line 6, `c` is initialized and assigned to the method`a.uniq`. This method will invoke the `.uniq` method on the calling object `a` which returns a new array from containing elements that are not duplicates. The return value is `[1, 2, 3, 4]`.
+`a` is assigned to the Array `[1, 2, 3, 4]`; therefore, this is what is output. Since `b` is assigned to `a`; it will have the same output.
 
-If the last line was `c = a.uniq!`; `a` the calling object; would modify `self` by removing all duplicates. It would not return a new array. The return value would be the same value as before; `[1, 2, 3, 4]`; except the original object would be permanently modified.
+`c` will return a *new* Array containing elements from the original object; `[1, 2, 3, 4]`; that are not duplicates. In this case, it will return a new array with the *same* elements as the original object since there are no duplicates.
 
-This problem demonstrates the concept of mutating and non-mutating methods. Mutating methods modify the original object and non-mutating methods return a new object. Additionally, multiple variables can reference the same object; mutating an object using a given variable name will be reflected in every other variable that is bound to that object.
+This problem demonstrates variables as pointers. When calling a non-mutating method on an object; any variable referencing this object will not be changed. Non-mutating methods return new objects and do not modify the original objects.
+
