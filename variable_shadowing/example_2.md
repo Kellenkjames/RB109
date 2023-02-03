@@ -12,13 +12,7 @@ puts n
 
 # Written Response:
 
-On line 4, the local variable `n` is initialized and assigned to the integer `10`. The `do...end` alongside the `times` method invocation on lines 6-8 define a block and introduces a new scope. 
+The local variable `n` is initialized and assigned to the Integer `10`. The `do...end` alongside the `times` method invocation on lines 6-8 defines a block, within which the variable `n` attempts reassignment to the Integer `11`; this will be ignored because of variable shadowing. The outer variable `n` on line 4 has the *same* name as the block parameter on line 6; therefore; the local variable `n` on line 7 never sees the initialization of variable `n` on line 4 and will be assigned to the Integer `11`.
 
-On line 6, the block parameter is defined as `n`; the same variable name as `n` on line 4. Since the outer variable `n` on line 4 and the block parameter `n` on line 6 have the same name; the local variable `n` is initialized and assigned to the integer `11` on line 7; re-assignment is ignored due to variable shadowing.
-
-The `times` method returns `1`; the calling object of the method.
-
-On line 10, we invoke the `puts` method and pass `n` as an argument. Since `n` was never re-assigned inside the block due to variable shadowing; the output is `10`. The method returns `nil`.
-
-This problem demonstrates the concept of variable shadowing. When a variable in the outer scope has the same name as block parameter (scoped at the method definition level), it prevents access to the outer scope variable from inside the block.
+The return value of the `times` method is the calling object; the Integer `1`. The `puts` method is called on line 10 and the variable `n` is passed to it as an argument; since the variable `n` was not reassigned inside the block; it will output its initialized value; `10`.
 
