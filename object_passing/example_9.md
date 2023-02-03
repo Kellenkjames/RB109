@@ -7,6 +7,8 @@ end
 
 # does this reassignment change the object outside the method?
 
+# Written Response:
+
 name = 'jim'
 change_name(name)
 puts name
