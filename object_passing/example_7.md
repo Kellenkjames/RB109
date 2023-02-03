@@ -11,7 +11,6 @@ b = plus(a, 2)
 puts a
 puts b
 ```
-
 # Written Response:
 
 The local variable `a` is initialized and assigned to the Integer `3` on line 8. The local variable `b` is initialized and assigned to the following; calling the `plus` method and passing in `a` as the first argument and the Integer `2` as the second argument.

@@ -7,7 +7,6 @@ c = a.uniq
 
 # What are a, b, and c? What if the last line was `c = a.uniq!`?
 ```
-
 # Written Response:
 
 The local variable `a` is initialized and assigned to the Array `[1, 2, 3, 4]` on line 4. The local variable `b` is initialized and assigned to `a` on line 5. The local variable `c` is initialized and assigned to the variable `a` calling the `uniq` method.

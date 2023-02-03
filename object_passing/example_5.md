@@ -8,7 +8,6 @@ b += 1.1
 
 # What is `a` and `b` ? Why?
 ```
-
 # Written Response:
 
 The local variable `a` is initialized and assigned to the Integer `5.2` on line 4. The local variable `b` is initialized and assigned to the Integer `7.3` on line 5.

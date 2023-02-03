@@ -5,12 +5,14 @@ def cap(str)
   str.capitalize!
 end
 
-# does this affect the object outside the method?
-
 name = "jim"
 cap(name)
 puts name
+
+# does this affect the object outside the method?
 ```
+
+# Written Response:
 
 The local variable `name` is initialized and assigned to the variable `"jim"`. The `cap` method is called on line 11 and the variable `name` is passed to it as an argument. Within the method definition, the `capitalize!` method is called on `str`; which is bound to the String `"jim"`. Since this is the only expression in the method; the method returns `"Jim"`.
 

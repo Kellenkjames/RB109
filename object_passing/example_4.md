@@ -10,7 +10,6 @@ test(a)
 
 # What is `a`? What if we called `map!` instead of `map`?
 ```
-
 # Written Response:
 
 The local variable `a` is initialized and assigned to the Array `['a', 'b', 'c']` on line 8. The `test` method is called on line 9 and `a` is passed to it as an argument.

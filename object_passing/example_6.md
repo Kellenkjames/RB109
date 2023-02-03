@@ -10,7 +10,6 @@ test_str = 'Written Assessment'
 test(test_str)
 puts test_str
 ```
-
 # Written Response:
 
 The local variable `test_str` is initialized and assigned to the String `'Written Assessment'` on line 9. The `test` method is called on line 10 with `test_str` passed to it as an argument.

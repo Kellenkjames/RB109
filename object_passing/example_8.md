@@ -9,6 +9,8 @@ y = 'a'
 increment(y)
 puts y
 ```
+# Written Responses:
+
 The local variable `y` is initialized and assigned to the String `a` on line 8. The `increment` method is called on line 9 with `y` passed to it as an argument.
 
 The local variable `x`; which is bound to the String `'a'` appends the String `'b'` on line 5; since this is the only expression in the method; the method implicitly returns the String `'ab'`.
