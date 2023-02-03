@@ -21,5 +21,5 @@ The `downcase!` method is called on `str`; which is now the String `'Written Ass
 
 The method returns `'written assessment!`. The `puts` method is called on line 11 and the variable `test_str` is passed to it as an argument; since `test_str` was reassigned in the method before it was mutated; the output is the original String; `Written Assessment`.
 
-This problem demonstrates reassignment and mutable objects. Strings are mutable objects. If a String is reassigned *before* it's mutated; the original object will be left unchanged. The reason is that reassignment will bind the variable to a different object and the mutating method is called on the different object; not the original.
+This problem demonstrates reassignment and mutable objects. Strings are mutable objects. If a String is reassigned *before* it's mutated; the original object will be left unchanged. The reason is that reassignment will bind the variable to a different object and the mutating method is called on the different object; *not* the original.
 
