@@ -17,7 +17,9 @@ The local variable `test_str` is initialized and assigned to the String `'Writte
 
 The local variable `str` which is bound to the String `Written Assessment` uses shorthand reassignment to perform the following operation: `Written Assessment` + `"!"` and stores the value back to `str` on line 5.
 
-`str` is now the String `'Written Assessment!'` and the `downcase!` method is called on the object on line 6.
+The `downcase!` method is called on `str`; which is now the String `'Written Assessment!'` on line 6.
 
 The method returns `'written assessment!`. The `puts` method is called on line 11 and the variable `test_str` is passed to it as an argument; since `test_str` was reassigned in the method before it was mutated; the output is the original String; `Written Assessment`.
+
+This problem demonstrates reassignment and mutable objects. Strings are mutable objects. If a String is reassigned *before* it's mutated; the original object will be left unchanged. The reason is that reassignment will bind the variable to a different object and the mutating method is called on the different object; not the original.
 
