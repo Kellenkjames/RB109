@@ -16,3 +16,5 @@ The local variable `n` is initialized and assigned to the Integer `10`. The `do.
 
 The return value of the `times` method is the calling object; the Integer `1`. The `puts` method is called on line 10 and the variable `n` is passed to it as an argument; since the variable `n` was not reassigned inside the block; it will output its initialized value; `10`.
 
+This problem demonstrates variable shadowing. When an outer variable has the *same* name as a parameter at the method definition level; variable shadowing occurs and reassignment is ignored inside the block.
+
