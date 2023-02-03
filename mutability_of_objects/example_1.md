@@ -9,4 +9,9 @@ a = "not there"
 ```
 # Written Response:
 
-`a` returns `"not there"` and `b` returns `"hi there"`. What this shows is that reassignment to a variable doesn't mutate the object referenced by that variable; instead, the variable is bound to a different object. The original object is merely disconnected from the variable.
+The local variable `a` is initialized and assigned to the String `"hi there"` on line 4. The local variable `b` is initialized and assigned to `a` on line 5. `a` is reassigned to the String `"not there"`.
+
+Since `a` is now the String `"not there"`; this is what is output. `b` is assigned to `a` before `a` is reassigned; therefore, it will output the String `"hi there"`.
+
+This problem demonstrates reassignment in Ruby; reassignment is a non-mutating operation. When two variables are pointing to the same object and one of the variables is reassigned; the variable that is reassigned breaks the binding of the reference to the original object.
+
