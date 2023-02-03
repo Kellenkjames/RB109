@@ -13,5 +13,7 @@ The local variable `a` is initialized and assigned to the String `"hi there"` on
 
 Since `a` is now the String `"not there"`; this is what is output. `b` is assigned to `a` before `a` is reassigned; therefore, it will output the String `"hi there"`.
 
-This problem demonstrates reassignment in Ruby; reassignment is a non-mutating operation. When two variables are pointing to the same object and one of the variables is reassigned; the variable that is reassigned breaks the binding of the reference to the original object.
+This problem demonstrates reassignment in Ruby; reassignment doesn't mutate the object referenced by that variable, instead, the variable is bound to a different object. The original object is merely disconnected from the variable.
+
+
 

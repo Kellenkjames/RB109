@@ -7,9 +7,10 @@ a << ", Bob"
 
 # What are a and b?
 ```
-
 # Written Response:
 
-`a` and `b` have the same return value; `"hi there, Bob"`. Strings are mutable objects. When we apply the `<<` operator on `a`; it will append the string `", Bob"` to the end of the string `"hi there"`; which is the initialized value of `a`. This is a mutating method and modifies the calling object `a` as well as any objects that are referencing `a`. In this case; `b` is the object that is referencing `a`.
+The local variable `a` is initialized and assigned to the String `"hi there"` on line 4. The local variable `b` is initialized and assigned to the variable `a` on line 5. On line 6, the append method is invoked on `a` and the String `", Bob"` is passed to it as an argument.
 
-This problem demonstrates the concept of mutability of Ruby objects and variable references. Multiple variables can reference the same object; mutating an object using a given variable name will be reflected in every other variable that is bound to that object.
+Since `a` was modified with a mutating method; the original object is changed to `"hi there, Bob"`; therefore; this is what is output. Since `b` was assigned to `a` and `a` was mutated; it will output the same String as `a`; `"hi there, Bob"`.
+
+This problem demonstrates mutable objects In Ruby, Strings are mutable objects. When an object is mutated; any variable referencing the object that was mutated will be modified as well. Instead of the variable breaking the connection to the object; the object is modified in place.
