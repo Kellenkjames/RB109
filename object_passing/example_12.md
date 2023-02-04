@@ -21,4 +21,4 @@ The `puts` method is called on line 11 with `arr1` passed to it as an argument; 
 
 The `puts` method is called on line 12 with `arr2` passed to it as an argument; the output is a mutated *copy* of the original object which returns; `["A", "B", "C"]`.
 
-This problem demonstrates the concept of reassignment and mutable objects. Arrays are mutable objects. When calling mutating methods on arrays; news objects are returned. In this example, we made a shallow copy of the original object; therefore; the original object was unchanged by the mutating method.
+This problem demonstrates the concept of reassignment and mutable objects. Arrays are mutable objects. When calling mutating methods on arrays; *new* objects are returned; however; in this example, the mutating method was invoked on a shallow copy of the original object; therefore; the original object is left *unchanged*.
