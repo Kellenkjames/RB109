@@ -9,10 +9,12 @@ end
 
 s = 'hello'
 t = fix(s)
+
+# What values do `s` and `t` have? Why?
 ```
 # Written Response:
 
-The local variable `s` is initialized and assigned to the String `'hello'` on line 10. The local variable `t` is initialized and assigned to calling the `fix` method while passing in `s` as an argument on line 11.
+The local variable `s` is initialized and assigned to the String `'hello'` on line 10. The local variable `t` is initialized and assigned to calling the `fix` method while passing `s` to it as an argument on line 11.
 
 Within the `fix` method definition; the local variable `value`; which is bound to the String `'hello'` calls the `upcase!` method on line 5; this returns `'HELLO'`.
 
