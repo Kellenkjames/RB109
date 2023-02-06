@@ -4,6 +4,8 @@
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 arr.select { |n| n.odd? }
 ```
+# Written Response:
+
 The local variable `arr` is initialized and assigned to the Array `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` on line 4.
 
 The `{}` alongside the `select` method defines a block on line 5. Within the block, the parameter `n` represents the current element of `arr` and the expression `n.odd?` is evaluated for each element in `arr`; the block is passed to the `select` method as an argument.

@@ -9,6 +9,7 @@ end
 
 p new_array
 ```
+# Written Response:
 
 The local variable `arr` is initialized and assigned to the Array `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.The local variable `new_arr` is initialized and assigned to calling the `select` method on `arr` while passing the `do...end` to it as a block.
 
