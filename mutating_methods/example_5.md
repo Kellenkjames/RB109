@@ -11,6 +11,7 @@ t = fix(s)
 
 # What values do `s` and `t` have? Why?
 ```
+# Written Response:
 
 The local variable `s` is initialized and assigned to the String `'abc'` on line 9. The local variable `t` is initialized and assigned to calling the `fix` method while passing `s` to it as an argument; on line 10.
 
