@@ -2,7 +2,7 @@
 
 ```ruby
 def add_name(arr, name)
-  arr = arr + [name] # returns a new Array
+  arr = arr + [name]
   name
 end
 
@@ -21,9 +21,5 @@ Within the method definition; the local variable `arr`; which is bound to the Ar
 `add_name(names, 'jim')` will return `['bob', 'kim', 'jim']` on line 10. The `puts` method is called on line 11 with `name` passed to it as an argument. The output will be the Strings `'bob'` and `'kim'` each on a newline and the return value is `nil`.
 
 This problem demonstrates reassignment and mutable objects. Arrays are mutable objects. Within the method definition, the original object is reassigned with the `#+`; returns a new array and left the original object outside of the method unchanged.
-
-
-
-
 
 
