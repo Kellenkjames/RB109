@@ -5,7 +5,7 @@
   value.size > 4
 end
 ```
-# Written Assessment:
+# Written Response:
 
 The `do...end` alongside the `any?` method defines a block on lines 4-6. The block parameters `key` and `value` represent the current key-value pair of the Hash `{ a: "ant", b: "bear", c: "cat" }`.
 
