@@ -21,4 +21,4 @@ Within the method definition; the local variable `value`; which is bound to the 
 
 `t` returns the String `axc`; the same as the return value of the method invocation of `fix` with `s` passed to it as an argument.
 
-This problem demonstrates mutating methods and mutable objects. Strings are mutable objects. Index reassignment is a mutating operation and will affect the original object outside of the method definition.
+This problem demonstrates mutating methods and mutable objects. Strings are mutable objects. Index reassignment is a mutating method and will affect the original object outside of the method definition.
