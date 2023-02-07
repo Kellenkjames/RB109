@@ -13,7 +13,6 @@ end
 puts a
 puts b
 ```
-
 # Written Response:
 
 The local variable `a` is initialized and assigned to the Integer `4` on line 4. The local variable `b` is initialized and assigned to the Integer `2` on line 5.

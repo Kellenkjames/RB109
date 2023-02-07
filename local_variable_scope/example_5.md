@@ -9,7 +9,6 @@ end
 word = "Hello"
 greetings(word)
 ```
-
 # Written Response:
 
 The local variable `word` is initialized and assigned to the String `"Hello"` on line 9. The method definition `greetings` is called with the reference `word` passed to it as an argument on line 10.

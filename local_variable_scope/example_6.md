@@ -13,7 +13,6 @@ end
 
 puts "Your total is #{sum}"
 ```
-
 # Written Response:
 
 The local variable `arr` is initialized and assigned to the Array literal `[1, 2, 3, 4]` on line 4. The local variable `counter` is initialized and assigned to the Integer `0` on line 5. The local variable `sum` is initialized and assigned to the Integer `0` on line 6.

@@ -12,7 +12,6 @@ end
 
 example('hello')
 ```
-
 # Written Response:
 
 The method definition `example` is called on line 13 with the String `'hello'` passed to it as an argument. The local variable `i` is initialized and assigned to the Integer `3` on line 5. The `do...end` alongside the `loop` method invocation on lines 6-10 defines a block, within which; the `puts` method is called with the value `str`; which is bound to the String `'hello'`; is passed to it as an argument. The output is the String `'hello'`; which prints on a newline; three times.
