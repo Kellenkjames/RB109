@@ -18,13 +18,13 @@ puts b
 
 The local variable `a` is initialized and assigned to the Integer `4` on line 4. The local variable `b` is initialized and assigned to the Integer `2` on line 5.
 
-The `do...end` alongside the `loop` method invocation on lines 7-11 defines a block, which introduces a new scope. The local variable `c` is initialized and assigned to the Integer `3` on line 8. The variable `a` is reassigned to the variable `c`. The `loop` method returns `nil`.
+The `do...end` alongside the `loop` method invocation on lines 7-11 defines a block and introduces a new scope; within which; the local variable `c` is initialized and assigned to the Integer `3` on line 8. `a` is reassigned to `c` on line 9. The `loop` method returns `nil`.
 
-The `puts` method is called on line 13 with the value `a` passed to it as an argument; since `a` is now assigned to `c`; and the `c` is assigned to the Integer `3`; this is what is output.
+The `puts` method is called on line 13 with the value `a` passed to it as an argument; since `a` is now assigned to `c`; and `c` is assigned to the Integer `3`; this is what is output. The method returns `nil`.
 
-The `puts` method is called on line 14 with the value `b` passed to it as an argument; since `b` is not reassigned anywhere in the program; it will output the initialized value; `2`.
+The `puts` method is called on line 14 with the value `b` passed to it as an argument; since `b` is not reassigned anywhere in the program; it will output its initialized value on line 5; the Integer `2`. The method returns `nil`.
 
-This example demonstrates local variable scoping rules in Ruby; specifically the fact that variables initialized outside of a block are accessible inside of a block.
+This example demonstrates local variable scoping rules in Ruby; when a block is passed to a `loop` method; it introduce a new scope. From inside the block, you can access variables that were initialized outside of the block. However, from outside the bock, you can't access any variables that were initialized inside the block.
 
 
 
