@@ -24,5 +24,5 @@ The `do...end` alongside the `loop` invocation method on lines 8-12 defines a bl
 
 The `puts` method is called on line 14 with a String passed to it as an argument; since the String uses interpolation for `sum`; the output is `"Your total is 10"`. `sum` is the sum of all the `arr` elements added together.
 
-This problem demonstrates local variable scope rules in Ruby; A `loop` method with a `do...end` block passed to it as an argument introduces a new scope. When variables are initialized from outside of the block; the variables can be accessed from within the block. However, variables that are initialized from inside the block; are not accessible from outside oft the block. 
+This problem demonstrates local variable scope rules in Ruby; A `loop` method with a `do...end` block passed to it as an argument introduces a new scope. When variables are initialized from outside of the block; the variables can be accessed from within the block. However, variables that are initialized from inside the block; are not accessible from outside of the block.
 
