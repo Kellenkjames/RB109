@@ -13,9 +13,12 @@ puts name
 ```
 # Written Response:
 
-The local variable `name` is initialized and assigned to the String `jim` on line 10. The `change_name` method is called on line 11 and the variable `name` is passed to it as an argument. Within the `change_name` method, the local variable `name` which is bound to the String `jim`; is reassigned to the String `bob`; since this is the only expression in the method; this is the return value.
+The local variable `name` is initialized and assigned to the String `jim` on line 10. The method definition `change_name` is called with the reference `name` passed to it as an argument. 
+Within the method definition `change_name`; the local variable `name` is bound the to the String `'jim'`. `name` is reassigned from the String `'jim'` to the String `'bob'` on line 5.
 
-The `puts` method is called on line 12 and the variable `name` is passed to it as an argument; since from within the method there is a reassignment and reassignment is a non-mutating method; the output of `name` will be it's initialized object; `jim` and the return value is `nil`.
+Since `name` was reassigned from inside the method definition; the return value is the original object; the String `'jim'`.
+The method call `change_name(name)` returns the String `'bob'`.
+The `puts` method is called with the reference `name` being passed to it as an argument; this outputs the String `'jim'`. The method returns `nil`.
 
-This problem demonstrates passing objects and reassignment. Strings are mutable objects but they are not always mutated when passed into a method as an argument. Reassignment is a non-mutating operation even when working with mutable objects like Strings.
+This problem demonstrates passing objects and reassignment. Strings are mutable objects but they are not always mutated when passed into a method as an argument. Reassignment is a non-mutating operation even when working with mutable objects like Strings. Reassignment from within a method definition will never change the object outside of the method.
 
