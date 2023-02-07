@@ -13,7 +13,7 @@ puts name
 ```
 # Written Response:
 
-The local variable `name` is initialized and assigned to the String `jim` on line 10. The method definition `change_name` is called with the reference `name` passed to it as an argument. 
+The local variable `name` is initialized and assigned to the String `jim` on line 10. The `change_name` method is called with the reference `name` passed to it as an argument. 
 Within the method definition `change_name`; the local variable `name` is bound the to the String `'jim'`. `name` is reassigned from the String `'jim'` to the String `'bob'` on line 5.
 
 Since `name` was reassigned from inside the method definition; the return value is the original object; the String `'jim'`.
