@@ -12,11 +12,13 @@ test(a)
 ```
 # Written Response:
 
-The local variable `a` is initialized and assigned to the Array `['a', 'b', 'c']` on line 8. The `test` method is called on line 9 and `a` is passed to it as an argument.
+The local variable `a` is initialized and assigned to the Array literal `['a', 'b', 'c']` on line 8. The method definition `test` is called with the reference `a` passed to it as an argument on line 9.
 
-The `{}` alongside the `map` method invocation on the local variable `b`; is bound to the Array `['a', 'b', 'c']` and defines a block. Within the block; the parameter `letter` is used to represent each String object in the Array.
+The `{}` alongside the `map` method invocation on line 5 defines a block. Within the block; the parameter `letter` represents the current element of the reference `a`; the block will return a new string on each iteration. The block is passed to `map` as an argument and returns a new Array literal; `["I like the letter: a", "I like the letter: b", "I like the letter: c"]`.
 
-The `map` method will return a *new* array with the following value:
-`["I like the letter: a", "I like the letter: b", "I like the letter: c"]`
+Since `a` is not mutated from inside the method; it returns the original object; the Array literal `['a', 'b', 'c']`.
 
-This problem demonstrates object passing. In this example, Ruby acts as "pass-by-value" since the method returns a *new* array and the original object is left unchanged.
+If we called `map!` instead of `map` this would mutate `a` from inside the method and affect the object outside of the method.
+
+This problem demonstrates the concepts of mutating vs non-mutating methods. `map` is a non-mutating method and returns a new array. When passing a reference into an object and calling a non-mutating method on the object from inside of the method; the original object outside of the method is not affected.
+
