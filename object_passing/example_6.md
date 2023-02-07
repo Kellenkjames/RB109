@@ -12,13 +12,13 @@ puts test_str
 ```
 # Written Response:
 
-The local variable `test_str` is initialized and assigned to the String `'Written Assessment'` on line 9. The `test` method is called on line 10 with `test_str` passed to it as an argument.
+The local variable `test_str` is initialized and assigned to the String `'Written Assessment'` on line 9. The method definition `test` is called on line 10 with the reference `test_str` passed to it as an argument.
 
-The local variable `str` which is bound to the String `Written Assessment` uses shorthand reassignment to perform the following operation: `Written Assessment` + `"!"` and stores the value back to `str` on line 5.
+The local variable `str`; which is bound to the String `'Written Assessment'`; concatenates the String `"!"` and reassigns the value back to `str` on line 5. This returns the String `'Written Assessment!'`.
+The `downcase!` method is called on `str` on line 6. This returns the string `'written assessment!'` which is also the return value of the method definition `test`.
 
-The `downcase!` method is called on `str`; which is now the String `'Written Assessment!'` on line 6.
+Since `test_str` is reassigned from within the method *before* a mutating method is called on the object; it returns its original object; the String `'Written Assessment'`.
+The `puts` method is called with the reference `test_str` passed to it as an argument on line 11. This outputs the String `'Written Assessment'`. The method returns `nil`.
 
-The method returns `'written assessment!`. The `puts` method is called on line 11 and the variable `test_str` is passed to it as an argument; since `test_str` was reassigned in the method before it was mutated; the output is the original String; `Written Assessment`.
-
-This problem demonstrates reassignment and mutable objects. Strings are mutable objects. If a String is reassigned *before* it's mutated; the original object will be left unchanged. The reason is that reassignment will bind the variable to a different object and the mutating method is called on the different object; *not* the original.
+This problem demonstrates concepts of reassignment and mutating methods. When a reference is passed to a method call and the reference is reassigned *before* a mutating method is called on the object; the original object outside of the method won't be affected. Anytime a object is reassigned; the original object is disconnected from the variable.
 
