@@ -24,7 +24,7 @@ The `puts` method is called on line 13 with the value `a` passed to it as an arg
 
 The `puts` method is called on line 14 with the value `b` passed to it as an argument; since `b` is not reassigned anywhere in the program; it will output its initialized value on line 5; the Integer `2`. The method returns `nil`.
 
-This example demonstrates local variable scoping rules in Ruby; when a block is passed to a `loop` method; it introduce a new scope. From inside the block, you can access variables that were initialized outside of the block. However, from outside the bock, you can't access any variables that were initialized inside the block.
+This example demonstrates local variable scoping rules in Ruby; when a block is passed to a `loop` method invocation; it introduce a new scope. From inside the block, you can access variables that were initialized outside of the block. However, from outside the bock, you can't access any variables that were initialized inside the block.
 
 
 

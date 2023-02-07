@@ -21,7 +21,7 @@ The `puts` method is called on line 13 with the value `a` passed to it as an arg
 
 When calling the `puts` method on line 14, the output is an *error*; since `b` is initialized from within the block; `b` is not accessible from outside the block.
 
-This example demonstrates local variable scoping rules in Ruby; when a block is passed to a `loop` method; it introduce a new scope. From inside the block, you can access variables that were initialized outside of the block. However, from outside the bock, you can't access any variables that were initialized inside the block.
+This example demonstrates local variable scoping rules in Ruby; when a block is passed to a `loop` method invocation; it introduce a new scope. From inside the block, you can access variables that were initialized outside of the block. However, from outside the bock, you can't access any variables that were initialized inside the block.
 
 
 
