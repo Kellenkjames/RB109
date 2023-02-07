@@ -14,12 +14,14 @@ puts var
 ```
 # Written Response:
 
-The local variable `animal` is initialized and assigned to the String `"dog"`. The `do...end` alongside the `loop` method invocation on lines 6-10 defines a block, within which `animal` is reassigned to the String `"cat"` on line 7. The local variable `var` is initialized and assigned to the String `"ball"`. The `loop` method returns `nil`.
+The local variable `animal` is initialized and assigned to the String `"dog"` on line 4.
 
-The `puts` method is called on line 12 and the variable `animal` is passed to it as an argument; since `animal` is now the String `"cat"`; this is what is output. The `puts` method is called on line 12 has the following output: `undefined local variable or method var' for main:Object`; since `var` was initialized inside the block; it's not accessible outside of the block.
+The `do...end` alongside the `loop` method invocation on lines 6-10 defines a block, within which; `animal` is reassigned to the String `"cat"` on line 7. The local variable `var` is initialized and assigned to the String `"ball"` on line 8. The `loop` method breaks on line 9 and returns `nil`.
 
-This problem demonstrates local variable scoping rules in Ruby; variables that are initialized from outside of a block are accessible inside of a block. However, when variables are initialized from inside the block, they are not accessible outside of the block.
+The `puts` method is called with the reference `animal` passed to it as an argument on line 12. Since `animal` is now the String `"cat"`; this is what is output. The method returns `nil`.
+The `puts` method is called with the reference `var` passed to it as an argument on line 13. Since `var` was initialized from inside the block; it's not accessible outside of the block and a *error* will be thrown in the console.
 
+This example demonstrates local variable scoping rules in Ruby; when a block is passed to a `loop` method invocation; it introduce a new scope. From inside the block, you can access variables that were initialized outside of the block. However, from outside the bock, you can't access any variables that were initialized inside the block.
 
 
 

@@ -17,9 +17,8 @@ puts b
 
 The local variable `a` is initialized and assigned to the Integer `4` on line 4. The `do...end` alongside the `loop` method invocation on lines 6-11 defines a block and introduces a new scope; within which; `a` is reassigned to the Integer `5` on line 7. The local variable `b` is initialized and assigned to the Integer `3` on line 8. The `loop` method returns `nil`.
 
-The `puts` method is called on line 13 with the value `a` passed to it as an argument; since `a` is now assigned to the Integer `5`; this is what is output. The method returns `nil`.
-
-When calling the `puts` method on line 14, the output is an *error*; since `b` is initialized from within the block; `b` is not accessible from outside the block.
+The `puts` method is called on line 13 with the value `a` passed to it as an argument. Since `a` is now assigned to the Integer `5`; this is what is output. The method returns `nil`.
+The `puts` method is called on line 14 with the value `b` passed to it as an argument. Since `b` was initialized from inside of the block; it's not accessible outside of the block and a *error* will be thrown in the console.
 
 This example demonstrates local variable scoping rules in Ruby; when a block is passed to a `loop` method invocation; it introduce a new scope. From inside the block, you can access variables that were initialized outside of the block. However, from outside the bock, you can't access any variables that were initialized inside the block.
 
