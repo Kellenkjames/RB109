@@ -13,12 +13,11 @@ end
 puts a
 puts b
 ```
-
 # Written Response:
 
-The local variable `a` is initialized and assigned to the Integer `4` on line 4. The `do...end` alongside the `loop` method invocation on lines 6-11 defines a block, within which `a` is reassigned to the Integer `5` on line 7. The local variable `b` is initialized and assigned to the Integer `3` on line 8. The `loop` method returns `nil`.
+The local variable `a` is initialized and assigned to the Integer `4` on line 4. The `do...end` alongside the `loop` method invocation on lines 6-11 defines a block, which introduces a new scope and within which; `a` is reassigned to the Integer `5` on line 7. The local variable `b` is initialized and assigned to the Integer `3` on line 8. The `loop` method returns `nil`.
 
-The `puts` method is called on line 13 with the value `a` passed to it as an argument; since `a` is now assigned to `5`; this is what is output.
+The `puts` method is called on line 13 with the value `a` passed to it as an argument; since `a` is now assigned to the Integer `5`; this is what is output. The method returns `nil`.
 
 When calling the `puts` method on line 14, an error is thrown in the terminal; since we initialized `b` from within the block; `b` is not accessible from outside the block.
 
