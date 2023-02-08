@@ -11,7 +11,7 @@ p a
 ```
 # Written Response:
 
-The local variable `a` is initialized and assigned to the String `'hello'` on line 8. The `a_method` is called on line 9 with `a` passed to it as an argument.
+The local variable `a` is initialized and assigned to the String literal `'hello'` on line 8. The `a_method` invocation passes the reference `a` as an argument on line 9.
 
 Within the method definition; the local variable `string` which is bound to the String `'hello'` appends the String `' world'`. The method returns `'hello world'`.
 

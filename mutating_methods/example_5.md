@@ -13,7 +13,7 @@ t = fix(s)
 ```
 # Written Response:
 
-The local variable `s` is initialized and assigned to the String literal `'abc'` on line 9. The local variable `t` is initialized and assigned to calling the `fix` method invocation and passing the reference `s` as an argument on line 9.
+The local variable `s` is initialized and assigned to the String literal `'abc'` on line 9. The local variable `t` is initialized and assigned to calling the `fix` method invocation with passing the reference `s` as an argument on line 9.
 
 Within the `fix` method definition; the local variable `value`; which is bound to the String `'abc'`; uses the `string[index]` method to assign the second index of `value` to the String literal `x`; this returns the String literal `'axc'`. `value` is referenced on line 6 which returns the String literal `'axc'`; this is the return value of the `fix` method invocation.
 
