@@ -13,12 +13,12 @@ t = fix(s)
 ```
 # Written Response:
 
-The local variable `s` is initialized and assigned to the String `'abc'` on line 9. The local variable `t` is initialized and assigned to calling the `fix` method while passing `s` to it as an argument; on line 10.
+The local variable `s` is initialized and assigned to the String literal `'abc'` on line 9. The local variable `t` is initialized and assigned to calling the `fix` method invocation and passing the reference `s` as an argument on line 9.
 
-Within the method definition; the local variable `value`; which is bound to the String `'abc'`; reassigns the second index to the String `'x'`. On line 6, `value` is returned; the String `axc'`.
+Within the `fix` method definition; the local variable `value`; which is bound to the String `'abc'`; uses the `string[index]` method to assign the second index of `value` to the String literal `x`; this returns the String literal `'axc'`. `value` is referenced on line 6 which returns the String literal `'axc'`; this is the return value of the `fix` method invocation.
 
-`s` returns the String `axc`; since `s` was mutated using index reassignment within the method definition; this affects the original object outside of the method.
+`s` returns the String literal `'axc'`; since `s` was mutated using the `string[index]` method within the `fix` method definition; this affects the original object outside of the method.
 
-`t` returns the String `axc`; the same as the return value of the method invocation of `fix` with `s` passed to it as an argument.
+`t` returns the String literal `'axc'`; the return value of the `fix` method invocation.
 
-This problem demonstrates mutating methods and mutable objects. Strings are mutable objects. Index reassignment is a mutating method and will affect the original object outside of the method definition.
+This problem demonstrates mutating methods and mutable objects. Strings are mutable objects. String index assignment is a mutating method and will affect the original object outside of the method definition.
