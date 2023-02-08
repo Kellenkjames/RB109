@@ -12,15 +12,17 @@ t = fix(s)
 
 # What values do 's' and 't' have? Why? 
 ```
-# Written Response: 
+# Written Response:
 
-The local variable `s` is initialized and assigned to the String `'hello'` on line 10. The local variable `t` is initialized and assigned to calling the `fix` method while passing in `s` as an argument; on line 11.
+The local variable `s` is initialized and assigned to the String literal `'hello'` on line 10. The local variable `t` is initialized and assigned to the `fix` method invocation with passing the reference `s` as an argument on line 11.
 
-Within the method definition; the local variable `value` which is bound to the String `xyz`; appends the String `xyz` to itself; on line 5. `value` is reassigned on line 6 while calling the `upcase` method on itself. On line 7, the `concat` method is called on `value` while passing `('!')` to it as an argument. The return value of the method is the String `'HELLOXYZ!'`.
+Within the `fix` method definition; the local variable `value` which is bound to the String literal `xyz`; appends the String literal `xyz` on line 5; this returns the String literal `'helloxyz'`.
+`value` is reassigned to invoking the `upcase` method on `value` on line 6; this returns the String literal `'HELLOXYZ'`.
+The `concat` method is invoked on `value` while passing the reference `('!')` as an argument on line 7; the return value is the String literal `'HELLOXYZ!'`; this is the return value of the `fix` method invocation.
 
-The variable `s` returns the String `'helloxyz'`; since the argument `s` was mutated inside the method definition on line 5 and before the reassignment on line 6; it affected the original object outside of the method.
+`s` returns the String literal `'helloxyz'`; since `s` was mutated within the `fix` method definition before the reassignment on line 6; it affected the original object outside of the method. The mutated object disconnected from `s` during the reassignment; therefore; any changes that happen at the point of reassignment are ignored by `s`.
 
-The variable `t` returns the String `'HELLOXYZ!'`; since the variable `value` was reassigned on line 6; the method returns a new String and doesn't affect the original object outside of the method definition.
+`t` returns the String literal `'HELLOXYZ!'`; the return value of the `fix` method invocation.
 
 This problem demonstrates mutating methods before reassignment. Strings are mutable objects. Within a method definition; if a String is mutated *before* its reassigned; the original object will only be affected by mutating methods that occur before the reassignment.
 
