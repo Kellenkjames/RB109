@@ -2,7 +2,7 @@
 
 ```ruby
 def fix(value)
-  value = value.upcase!
+  value = value.upcase! # reassignment with a mutating method will affect the object outside of the method.
   value.concat('!')
 end
 
@@ -18,7 +18,7 @@ The local variable `s` is initialized and assigned to the String literal `'hello
 Within `fix` the method definition; the local variable `value` which is bound to the String `'hello'`; is reassigned to the `upcase!` method invocation; this returns the String literal `'HELLO'`.
 The `concat` method is invoked on `value` while the reference `('!')` is passed as an argument; this returns the String literal `'HELLO!'`.
 
-`s` returns the String literal; `HELLO!`; Since `s` is mutated within the `fix` method definition; the object outside of the method is affected.
+`s` returns the String literal; `HELLO!`; Since `s` is reassigned and mutated within the `fix` method definition; the object outside of the method is affected.
 `t` returns the String literal `'HELLO!'`; the return value of the `fix` method invocation.
 
-This problem demonstrates mutating methods and reassignment. When a mutating method is called on an object and reassigned *back to itself*; it does not create a new variable reference or binding. The calling object is mutated and the original object outside of the method definition will be affected.
+This problem demonstrates mutating methods and reassignment. When an object is reassigned with a mutating method invoked on the object; it will affect the object outside of the method. This is an important distinction as normal reassignment will disconnect the object from the variable reference, but not when a mutating method is invoked the object.
