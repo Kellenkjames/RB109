@@ -16,7 +16,7 @@ puts var
 
 The local variable `animal` is initialized and assigned to the String `"dog"` on line 4.
 
-The `do...end` alongside the `loop` method invocation on lines 6-10 defines a block, within which; `animal` is reassigned to the String `"cat"` on line 7. The local variable `var` is initialized and assigned to the String `"ball"` on line 8. The `loop` method breaks on line 9 and the method invocation returns `nil`.
+The `do...end` alongside the `loop` method invocation on lines 6-10 defines a block, within which; `animal` is reassigned to the String `"cat"` on line 7. The local variable `var` is initialized and assigned to the String `"ball"` on line 8. The `loop` method breaks on line 9 and returns `nil`.
 
 The method invocation of `puts` passes the reference `animal` to it as an argument on line 12. Since `animal` is now the String `"cat"`; this is what is output. The method returns `nil`.
 The method invocation of `puts` passes the reference `var` to it as an argument on line 13. Since `var` was initialized from inside the block; it's not accessible outside of the block and a *error* will be thrown in the console.
