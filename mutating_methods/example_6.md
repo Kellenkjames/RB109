@@ -13,13 +13,13 @@ p a
 
 The local variable `a` is initialized and assigned to the String literal `'hello'` on line 8. The `a_method` invocation passes the reference `a` as an argument on line 9.
 
-Within the method definition; the local variable `string` which is bound to the String `'hello'` appends the String `' world'`. The method returns `'hello world'`.
+Within the `a_method` method definition; the local variable `string` which is bound to the String literal `'hello'`; appends the String literal `' world'`; this returns the String literal `'hello world'`.
 
-`a` returns the String `'hello world'` on line 8; since `a` was mutated inside the method definition; it affects the original object outside of the method.
+`a` returns the String literal `'hello world'` on line 8; since `a` was mutated inside the  `a_method` method definition; it affects the original object outside of the method.
 
-The `a_method` is called on line 9 with `a` passed to it as an argument; the return value is `'hello world'`.
+`a_method(a)` returns the String literal `'hello world'`. 
 
-The `p` method is called on line 10 while passing `a` to it as an argument; the method prints and returns the same value; `'hello world'`.
+The `p` method invocation passes the reference `a` as an argument on line 10; this outputs and returns the String literal `'hello world'`.
 
 This problem demonstrates mutable objects and mutating methods. Strings are mutable objects. When an argument is passed to a method and mutated inside a method definition; it will affect the original object outside of the method.
 
