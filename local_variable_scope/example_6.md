@@ -19,9 +19,9 @@ The local variable `arr` is initialized and assigned to the Array literal `[1, 2
 
 The `do...end` alongside the `loop` method invocation on lines 8-12 defines a block and introduces a new scope; within which; `sum` adds its initialized value; `0`; to the value of each`arr` index and reassigns the value back to `sum` on line 9. Each array index is accessed with the expression `arr[counter]` which starts at Integer `0` and increments by `1` on the following iterations.
 
-`counter` adds its initialized value to the Integer `1` on each iteration and reassigns the value back to `counter`. The `break` condition on line 11 shows the loop will end once `counter` is equal to the size of the `arr`; which is the Integer `4`. The `loop` method returns `nil`.
+`counter` adds its initialized value to the Integer `1` on each iteration and reassigns the value back to `counter`. The `break` condition on line 11 shows the loop will end once `counter` is equal to the size of the `arr`; which is the Integer `4`. The `loop` method invocation returns `nil`.
 
-The `puts` method is called on line 14 with a String passed to it as an argument; since the String uses interpolation for `sum`; the output is `"Your total is 10"`. `sum` is the sum of all the `arr` elements added together.
+The method invocation of `puts` passes a String to it as an argument on line 14; since the String uses interpolation for `sum`; the output is `"Your total is 10"`. `sum` is the sum of all the `arr` elements added together; which is the Integer `10`.
 
 This example demonstrates local variable scoping rules in Ruby; when a block is passed to a `loop` method invocation; it introduce a new scope. From inside the block, you can access variables that were initialized outside of the block. However, from outside the bock, you can't access any variables that were initialized inside the block.
 
