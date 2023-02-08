@@ -12,9 +12,9 @@ test(a)
 ```
 # Written Response:
 
-The local variable `a` is initialized and assigned to the Array literal `['a', 'b', 'c']` on line 8. The method definition `test` is called with the reference `a` passed to it as an argument on line 9.
+The local variable `a` is initialized and assigned to the Array literal `['a', 'b', 'c']` on line 8. The `test` method invocation passes the reference `a` as an argument on line 9.
 
-The `{}` alongside the `map` method invocation on line 5 defines a block. Within the block; the parameter `letter` represents the current element of the reference `a`; the block will return a new string on each iteration. The block is passed to `map` as an argument and returns a new Array literal; `["I like the letter: a", "I like the letter: b", "I like the letter: c"]`.
+The `{}` alongside the `map` method invocation defines a block on line 5. Within the block; the parameter `letter` represents the current element of the reference `a`; the block will return a new String on each iteration. The block is passed to `map` as an argument and returns a new Array literal; `["I like the letter: a", "I like the letter: b", "I like the letter: c"]`; this is the return value of the `test` method invocation.
 
 Since `a` is not mutated from inside the method; it returns the original object; the Array literal `['a', 'b', 'c']`.
 
