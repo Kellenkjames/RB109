@@ -14,7 +14,7 @@ example('hello')
 ```
 # Written Response:
 
-The method invocation of `example` passes the String `'hello'` to it as an argument on line 13. 
+The `example` method invocation passes the String literal `'hello'` to it as an argument on line 13. 
 
 The local variable `i` is initialized and assigned to the Integer `3` on line 5. The `do...end` alongside the `loop` method invocation on lines 6-10 defines a block, within which; the method invocation of `puts` passes `str` to it as an argument. `str` is a local variable bound to the String `'hello'`; the output is the String literal `'hello'` printed three times each on a newline.
 
