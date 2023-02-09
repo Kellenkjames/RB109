@@ -7,9 +7,8 @@ p a
 ```
 # Written Response:
 
-The local variable `a` is initialized and assigned to the Array `[a, b, c]` on line 4. The second index of `a` is reassigned to the String `'-'` on line 5.
+The local variable `a` is initialized and assigned to the Array `['a', 'b', 'c']` on line 4.
+`a` invokes a setter method that assigns the second index of `a` to the String `-` on line 5.
+The `p` method invocation passes `a` in as an argument; this outputs and returns the Array `['a', '-', 'c']` on line 6.
 
-The `p` method is called while passing `a` to it as an argument. The output and return value is the same; `[a, '-', c]`.
-
-This problem demonstrates mutating methods and mutable objects. Arrays are mutable objects. When using array index reassignment on the original object; it will mutate the object.
-
+This problem demonstrates mutating methods. The Array setter method is a mutating method that will affect the original object that it was called on.
