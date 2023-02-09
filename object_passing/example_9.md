@@ -13,12 +13,14 @@ puts name
 ```
 # Written Response:
 
+The method `change_name` accepts `name` as a parameter on line 4.
+
 The local variable `name` is initialized and assigned to the String `jim` on line 10. The `change_name` method invocation passes `name` in as an argument.
 
-Within the `change_name` method definition; the local variable `name` references `name` outside of the method on line 8. `name` is reassigned from the String `'jim'` to the String `'bob'` on line 5; the return value of the `change_name` method invocation is the String `'bob'`.
+Within the `change_name` method definition; the local variable `name` references `name` on line 8. `name` is reassigned from the String `'jim'` to the String `'bob'` on line 5; the return value of the `change_name` method invocation is the String `'bob'`.
 
-Since `name` was reassigned from inside the method definition; the return value is the original object; the String `'jim'`.
-The `puts` method invocation passes the reference `name` as an argument; this outputs the String `'jim'`; the method returns `nil`.
+Since `name` was reassigned from inside the method definition; it did not change the original object outside of the method; the return value is the String `'jim'`.
+The `puts` method invocation passes the reference `name` in as an argument; this outputs the String `'jim'` and the method returns `nil`.
 
-This problem demonstrates passing objects and reassignment. Strings are mutable objects but they are not always mutated when passed into a method as an argument. Reassignment is a non-mutating operation even when working with mutable objects like Strings. Reassignment from within a method definition will never change the object outside of the method.
+This problem demonstrates object passing and reassignment. In this example, we can say that Ruby acts as "pass by value". An object was passed into the method and reassigned; this has no effect on the original object outside of the method. Reassignment breaks the connection to the original object binds the variable to a new object.
 
