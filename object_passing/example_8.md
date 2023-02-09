@@ -16,7 +16,6 @@ The local variable `y` is initialized and assigned to the String `'a'` on line 8
 Within the `increment` method definition; the local variable `x` references `y` on line 8 and appends the String `'b'`; this returns the String `'ab'`; this is the return value of the `increment` method invocation.
 
 Since `y` was mutated from within the `increment` method definition; it changed the original object outside of the method; therefore; the return value is the String `'ab'`.
-
 The `puts` method invocation passes `y` in as an argument; this outputs the String `'ab'` and the method returns `nil`.
 
 This problem demonstrates object passing. In this example, we can say that Ruby acts as "pass by reference." The original object was passed into the method as an argument and mutated within the method; this changed the original object outside of the method.

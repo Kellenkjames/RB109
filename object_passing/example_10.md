@@ -13,12 +13,13 @@ puts name
 ```
 # Written Response:
 
+The method definition `cap` accepts `str` as a parameter on line 4.
+
 The local variable `name` is initialized and assigned to the String `"jim"` on line 8. The `cap` method invocation passes `name` in as an argument on line 9.
 
 Within the `cap` method definition; `str` references `name` on line 8 and invokes the `capitalize!` method on `str`. The method returns the String `"Jim"`; the `cap` method invocation returns the same value.
 
 Since `name` was mutated from within the `cap` method definition; the object outside of the method is affected; therefore; the return value is the String `"Jim"`.
-
 The `puts` method invocation passes the reference `name` in as an argument on line 10; this outputs the String `"Jim"` and returns `nil`.
 
 This problem demonstrates object passing. In this example, we can say that Ruby acts as "pass by reference". When a mutable object is passed into a method as an argument and mutated within the method definition; it will change the original object outside of the method.

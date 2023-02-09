@@ -11,7 +11,9 @@ arr
 ```
 # Written Response:
 
-The local variable `a` is initialized and assigned to the Array `[1, 3]` on line 4. The local variable `b` is initialized and assigned to the Array `[2]` on line 5. The local variable `arr` is initialized and assigned to the Array `[a, b]` on line 6.
+The local variable `a` is initialized and assigned to the Array `[1, 3]` on line 4. 
+The local variable `b` is initialized and assigned to the Array `[2]` on line 5. 
+The local variable `arr` is initialized and assigned to the Array `[a, b]` on line 6.
 
 The second index of `a` is reassigned to the Integer `5` on line 7.
 

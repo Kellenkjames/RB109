@@ -14,7 +14,6 @@ puts name
 # Written Response:
 
 The method `change_name` accepts `name` as a parameter on line 4.
-
 The local variable `name` is initialized and assigned to the String `jim` on line 10. The `change_name` method invocation passes `name` in as an argument.
 
 Within the `change_name` method definition; the local variable `name` references `name` on line 8. `name` is reassigned from the String `'jim'` to the String `'bob'` on line 5; the return value of the `change_name` method invocation is the String `'bob'`.
