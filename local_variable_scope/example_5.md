@@ -11,6 +11,8 @@ greetings(word)
 ```
 # Written Response:
 
+The method definition `greetings` accepts `str` as a parameter on line 4.
+
 The local variable `word` is initialized and assigned to the String `"Hello"` on line 9. The `greetings` method invocation passes the reference `word` to it as an argument on line 10.
 
 The `puts` method invocation passes the reference `str` as an argument on line 5. `str` represents a local variable and is bound to the String `"Hello"`; this is what is output.
