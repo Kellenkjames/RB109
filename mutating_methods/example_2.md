@@ -2,7 +2,7 @@
 
 ```ruby
 def fix(value)
-  value = value.upcase # reassignment with a non-mutating method will not affect the object outside the method.
+  value = value.upcase
   value.concat('!')
 end
 
@@ -13,12 +13,13 @@ t = fix(s)
 ```
 # Written Response:
 
-The local variable `s` is initialized and assigned to the String literal `'hello'` on line 9. The local variable `t` is initialized and assigned to the `fix` method invocation with passing the reference `s` as an argument on line 9.
+The local variable `s` is initialized and assigned to the String `'hello'` on line 9. The local variable `t` is initialized and assigned to the `fix` method invocation which passes `s` in as an argument on line 10.
 
-Within the `fix` method definition; the local variable `value` which is bound to the String `'hello'`; is reassigned to the invocation of the `upcase` method on `value`; this returns the String literal `'HELLO'`.The`concat` method is invoked on `value` with the reference `('!')` passed to it as an argument; this returns the String literal `'HELLO!'`; the `fix` method invocation returns the same value.
+Within the `fix` method definition; the local variable `value` which references the String `'hello'`; is reassigned to the method invocation of `upcase` on `value`; this returns the String `'HELLO'` on line 5.
+`value` invokes the `concat` method with the String `('!')` passed in as an argument; this returns the String `'HELLO!'`; the `fix` method invocation returns the same value.
 
-`s` returns the original String object; `'hello'`; since `s` is reassigned with a non-mutating method within the `fix` method definition; the original object outside the method is not affected.
+`s` returns the String `'hello'`; since `s` is reassigned within the `fix` method definition; the original object outside the method is not affected.
 `t` returns the String `'HELLO!'`; the return value of the `fix` method invocation.
 
-This problem demonstrates non-mutating methods and reassignment. Strings are mutable objects but are not always mutated when passed in as an argument to a method call. In this example, within the method; the original object was reassigned to a non-mutating method; therefore; the original object was left unchanged outside of the method definition.
+This problem demonstrates object passing and non-mutating methods. When an object is passed into a method as an argument and reassigned within the method definition; the original object outside the method is left unchanged.
 
