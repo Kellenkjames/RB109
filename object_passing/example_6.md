@@ -16,7 +16,7 @@ The method definition `test` accepts `str` as a parameter on line 4.
 
 The local variable `test_str` is initialized and assigned to the String `'Written Assessment'` on line 9. The `test` method invocation passes `test_str` in as an argument on line 10.
 
-The local variable `str`; which references the String `'Written Assessment'`; concatenates the String `"!"` and reassigns the value back to `str` on line 5; this returns the String `'Written Assessment!'`.
+Within the `test` method definition; the local variable `str`; which references `test_str` on line 9; concatenates the String `"!"` and reassigns the value back to `str` on line 5; this returns the String `'Written Assessment!'`.
 
 `str` invokes the `downcase!` method on line 6; this returns the String `'written assessment!'`; which is the return value of the `test` method invocation.
 
