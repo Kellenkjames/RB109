@@ -10,19 +10,20 @@ end
 s = 'hello'
 t = fix(s)
 
-# What values do 's' and 't' have? Why? 
+# What values do 's' and 't' have? Why?
 ```
 # Written Response:
 
-The local variable `s` is initialized and assigned to the String literal `'hello'` on line 10. The local variable `t` is initialized and assigned to the `fix` method invocation with passing the reference `s` as an argument on line 11.
+The method definition `fix` accepts `value` as a parameter on line 4.
 
-Within the `fix` method definition; the local variable `value` which is bound to the String literal `xyz`; appends the String literal `xyz` on line 5; this returns the String literal `'helloxyz'`.
-`value` is reassigned to invoking the `upcase` method on `value` on line 6; this returns the String literal `'HELLOXYZ'`.
-The `concat` method is invoked on `value` while passing the reference `('!')` as an argument on line 7; the return value is the String literal `'HELLOXYZ!'`; this is the return value of the `fix` method invocation.
+The local variable `s` is initialized and assigned to the String `'hello'` on line 10. The local variable `t` is initialized and assigned to the `fix` method invocation which passes `s` in as an argument on line 11.
 
-`s` returns the String literal `'helloxyz'`; since `s` was mutated within the `fix` method definition before the reassignment on line 6; it affected the original object outside of the method. The mutated object disconnected from `s` during the reassignment; therefore; any changes that happen at the point of reassignment are ignored by `s`.
+Within the `fix` method definition; the local variable `value` references the String `'hello'` and appends the String `'xyz'` on line 5; this returns the String `'helloxyz'`.
+`value` is reassigned to invoking the `upcase` method on `value` on line 6; this returns the String `'HELLOXYZ'`.
+`value` invokes the `concat` method and passes`('!')` in as an argument on line 7; the return value is the String `'HELLOXYZ!'`; this is the return value of the `fix` method invocation.
 
-`t` returns the String literal `'HELLOXYZ!'`; the return value of the `fix` method invocation.
+`s` returns the String `'helloxyz'`; since `s` was mutated within the `fix` method definition before the reassignment on line 6; it returns the *last* value before reassignment occurs. 
+`t` returns the String `'HELLOXYZ!'`; the return value of the `fix` method invocation.
 
-This problem demonstrates mutating methods before reassignment. Strings are mutable objects. Within a method definition; if a String is mutated *before* its reassigned; the original object will only be affected by mutating methods that occur before the reassignment.
+This problem demonstrates mutating methods and reassignment; specifically; what happens when a mutable object is passed to a method call as an argument and is mutated *before* reassignment. When an object is mutated before reassignment; the original object will only be affected by mutations that occur *before* the reassignment. In this example, we can say that Ruby acts like "pass by reference" since the original object outside of the method was affected.
 
