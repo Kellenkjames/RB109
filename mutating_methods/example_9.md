@@ -12,14 +12,14 @@ puts names
 ```
 # Written Response:
 
-The local variable `names` is initialized and assigned to the Array `['bob', 'kim']` on line 9. The `add_name` method is called on line 10 while passing in `names` as the first argument and the String `jim` as the second argument.
+The method definition `add_name` accepts `arr` and `name` as parameters on line 4.
 
-Within the method definition; the local variable `arr`; which is bound to the Array `['bob', 'kim']`; is reassigned to the expression `arr + [name]` on line 5. The local variable `name` is bound to the String `'jim'`; therefore; line 5 returns a new Array; `['bob', 'kim', 'jim']`. The local variable `name` is returned on line 6; the return value is the String `'jim'`; which is the return value of the method.
+The local variable `names` is initialized and assigned to the Array `['bob', 'kim']` on line 9. The `add_name` method invocation passed in `names` as the first argument and the String literal `jim` as the second argument.
 
-`names` will return the original Array object; `['bob', 'kim']`; since `names` was not mutated inside the method definition; the original object was left unchanged.
+Within the  `add_name` method definition; the local variable `arr`; references the Array `['bob', 'kim']` and the local variable `name` references the String `'jim'`. `arr` is reassigned to add `[name]` to `arr`; this returns the Array `['bob', 'kim', 'jim']` on line 5. `name` is referenced on line 6 which returns the String `'jim'`; this is the return value of the `add_name` method invocation.
 
-`add_name(names, 'jim')` will return `['bob', 'kim', 'jim']` on line 10. The `puts` method is called on line 11 with `name` passed to it as an argument. The output will be the Strings `'bob'` and `'kim'` each on a newline and the return value is `nil`.
+`names` returns Array `['bob', 'kim']`. Since `names` was not mutated within the `add_name` method definition; the original object outside of the method was unchanged.
+The `puts` method invocation passes `names` in as an argument on line 11; this outputs each String of the Array `['bob', 'kim']` on a newline and returns `nil`. 
 
-This problem demonstrates reassignment and mutable objects. Arrays are mutable objects. Within the method definition, the original object is reassigned with the `#+`; returns a new array and left the original object outside of the method unchanged.
-
+This problem demonstrates object passing and non-mutating methods. In this example, we can say that Ruby acts as "pass-by-value". When a mutable object is passed into a method invocation as an argument and the method is not mutated inside the method; the original object outside of the method is left unchanged. In addition, the Array `#+` method; which adds two arrays together; returns a new array and doesn't affect the original object.
 
