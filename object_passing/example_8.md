@@ -13,9 +13,9 @@ puts y
 
 The local variable `y` is initialized and assigned to the String `'a'` on line 8. The `increment` method invocation passes `y` in as an argument on line 9.
 
-Within the `increment` method definition; the local variable `x` references `'a'` and appends the String `'b'` on line 5; this returns the String `'ab'`; this is the return value of the `increment` method invocation.
+Within the `increment` method definition; the local variable `x` references `y` on line 8 and appends the String `'b'`; this returns the String `'ab'`; this is the return value of the `increment` method invocation.
 
-Since `y` was mutated from within the `increment` method definition; the return value is the String `'ab'`.
+Since `y` was mutated from within the `increment` method definition; it changed the original object outside of the method; therefore; the return value is the String `'ab'`.
 
 The `puts` method invocation passes `y` in as an argument; this outputs the String `'ab'` and the method returns `nil`.
 
