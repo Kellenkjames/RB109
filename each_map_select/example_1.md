@@ -9,11 +9,8 @@ end
 ```
 # Written Response:
 
-The local variable `array` is initialized and assigned to the Array `[1, 2, 3, 4, 5]` on line 4. The `do..end` alongside the `select` method defines a block on lines 6-8. The block parameter `num` represents the current element of `array` and the block is passed to the `select` method as an argument.
+The local variable `array` is initialized and assigned to the Array `[1, 2, 3, 4, 5]` on line 4. The `do..end` alongside the `select` method defines a block on lines 6-8. The block parameter `num` represents the current Array element of `array` and the block is executed on each element in `array`.
 
-The `puts` method is called on line 7 and the expression `num if num.odd?` is passed to it as an argument; this outputs the Integers `[1, 3, 5]` each on a newline and the method returns an empty array `[]`.
+The `puts` method invocation passes `num` in as an argument and checks if `num` is an odd number on each loop iteration; this will print out every odd number in the Array `[1, 3, 5]` on a newline and return an empty Array `[]`.
 
-The `puts` method always returns `nil`; or completely empty; therefore; an empty array `[]` is returned.
-
-This problem demonstrates the behaviors of the `select` method. The `select` method selects all elements of the array which evaluate as truthy and returns a *new* array; it doesn't mutate the original object.
-
+This problem demonstrates behaviors of the `select` method. The `select` method calls the block on each element of the Array and returns a new Array with elements that evaluate as truthy. In this example, the `puts` method invocation is the last line of the block and returns `nil`, which means; the block will always evaluate to false.
