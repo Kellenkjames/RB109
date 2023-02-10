@@ -11,14 +11,11 @@ p new_array
 ```
 # Written Response:
 
-The local variable `arr` is initialized and assigned to the Array `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.The local variable `new_arr` is initialized and assigned to calling the `select` method on `arr` while passing the `do...end` to it as a block.
+The local variable `arr` is initialized and assigned to the Array `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`. The local variable `new_arr` is initialized and assigned to the `select` method invocation on `arr`.
 
-The `do...end` alongside the `select` method on lines 6-8 defines a block; the parameter `n` represents the current element of `arr`. On line 7, within the block; the expression `n + 1` is evaluated for each element in `arr` and the block is passed to the `select` method as an argument.
+The `do...end` alongside the `select` method on lines 6-8 defines a block; the parameter `n` represents the current element of `arr`. Within the block; the expression `n + 1` is evaluated for each `n` on each loop iteration and the block is passed to the `select` method as an argument; this returns the calling object; `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
 
-`new_array` returns the original object; `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
+The `p` method invocation passes `new_array` in as an argument on line 10; this outputs the original object `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` and returns the same value.
 
-The `p` method is called on line 10 and `new_array` is passed to it as an argument; the output is the original object `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`; printed on a single line; the return value is the same object.
-
-This problem demonstrates the behaviors of the `select` method. The `select` method always evaluates a given block based on truthiness. In this case, a math operation on each element has no effect as the method does not perform transformations (like with map); therefore; the original object is returned.
-
+This problem demonstrates behaviors of the `select` method. The `select` method always evaluates a given block based on truthiness. In this case, the expression `n + 1` evaluates as truthy for each element in the Array; therefore; the original object is returned. In Ruby, everything is considered truthy with the exception of `false` and `nil`.
 
