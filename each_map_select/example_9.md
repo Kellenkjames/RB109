@@ -12,11 +12,12 @@ p new_array
 ```
 # Written Response:
 
-The local variable `arr` is initialized and assigned to the Array `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` to line 4. The local variable `new_array` is initialized and assigned to calling the `map` method on `arr`. The `do...end` alongside the `map` method defines a block on lines 6-9; while the parameter `n` represents each element of `arr`.
+The local variable `arr` is initialized and assigned to the Array `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` on line 4. The local variable `new_array` is initialized and assigned to the `map` method invocation on `arr`.
 
-Within the block; the expression `n > 1` is evaluated for each `n`; since this expression checks for truthiness; the return value will be a new Array; `[false, true, true, true, true, true, true, true, true, true]`. The `puts` method is called with `n` passed to it as an argument; this outputs each each element of `arr` on a newline; `1 2 3 4 5 6 7 8 9 10` and returns the following array; `[nil, nil, nil, nil, nil, nil, nil, nil, nil, nil]`.
+The `do...end` alongside the `map` method invocation defines a block on lines 6-9. Within the block; the parameter `n` represents the current element of `arr`. The expression `n > 1` is evaluated for each `n` in `arr`; this returns a new Array of boolean objects; `[false, true, true, true, true, true, true, true, true, true]`.
 
-The `p` method is called with `new_array` is passed to it as an argument; this outputs the following; `[nil, nil, nil, nil, nil, nil, nil, nil, nil, nil]` and returns the same object.
+The `puts` method invocation passes in the reference of `n` as an argument; this outputs each Array element `[false, true, true, true, true, true, true, true, true, true]` on a newline and returns `nil` on line 8.
 
-This problem demonstrates the behaviors of the `map` method; specifically; the behavior of having a `puts` method as the last line in the method. When `puts` is the last line within a `map` method; the method will return `nil` for each element represented by the block parameter.
+The `p` method invocation passes in the reference `new_array` as an argument; this outputs and returns the Array element `[false, true, true, true, true, true, true, true, true, true]`.
 
+This problem demonstrates behaviors of `map`. The `map` method calls the block on each element and returns a new Array whose elements are the return values of the block.
