@@ -13,7 +13,7 @@ p new_array
 
 The local variable `arr` is initialized and assigned to the Array `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`. The local variable `new_arr` is initialized and assigned to the `select` method invocation on `arr`.
 
-The `do...end` alongside the `select` method on lines 6-8 defines a block; the parameter `n` represents the current element of `arr`. Within the block; the expression `n + 1` is evaluated for each `n` on each loop iteration and the block is passed to the `select` method as an argument. Since the expression `n + 1` evaluates as truthy for each `n`; this returns the calling object; `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
+The `do...end` alongside the `select` method invocation on lines 6-8 defines a block; the parameter `n` represents the current element of `arr`. Within the block; the expression `n + 1` is evaluated for each `n` on each loop iteration and the block is passed to the `select` method as an argument. Since the expression `n + 1` evaluates as truthy for each `n`; this returns the calling object; `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
 
 The `p` method invocation passes `new_array` in as an argument on line 10; this outputs the original object `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` and returns the same value.
 

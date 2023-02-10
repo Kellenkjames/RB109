@@ -9,7 +9,7 @@ end
 ```
 # Written Response:
 
-The local variable `array` is initialized and assigned to the Array `[1, 2, 3, 4, 5]` on line 4. The `do..end` alongside the `select` method defines a block on lines 6-8. Within the block, the parameter `num` represents the current element of `array` and the block is executed on each `num`.
+The local variable `array` is initialized and assigned to the Array `[1, 2, 3, 4, 5]` on line 4. The `do..end` alongside the `select` method invocation defines a block on lines 6-8. Within the block, the parameter `num` represents the current element of `array` and the block is executed on each `num`.
 
 The `puts` method invocation passes `num` in as an argument and checks if `num` is an odd number on each loop iteration; this will print out every odd number in the Array `[1, 3, 5]` on a newline and return an empty Array `[]`.
 
