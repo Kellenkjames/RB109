@@ -15,7 +15,7 @@ puts b
 ```
 # Written Response:
 
-The local variable `a` is initialized and assigned to the Integer `4` on line 4. The `do...end` alongside the `loop` method invocation on lines 6-11 defines a block and introduces a new scope; within which; `a` is reassigned to the Integer `5` on line 7. The local variable `b` is initialized and assigned to the Integer `3` on line 8. The `loop` method returns `nil`.
+The local variable `a` is initialized and assigned to the Integer `4` on line 4. The `do...end` alongside the `loop` method invocation on lines 6-11 defines a block and introduces a new scope; within which; `a` is reassigned to the Integer `5` on line 7. The local variable `b` is initialized and assigned to the Integer `3` on line 8. The `loop` method invocation returns `nil`.
 
 The `puts` method invocation passes in the reference of `a` as an argument on line 13. Since `a` is now assigned to the Integer `5`; this is what is output; the method returns `nil`. The `puts` method invocation passes in the reference of `b` as an argument on line 14. Since `b` was initialized from inside of the block; it's not accessible from outside of the block; therefore; a *NameError* will be raised in the console.
 
