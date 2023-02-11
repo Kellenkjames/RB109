@@ -25,5 +25,3 @@ This problem demonstrates variable shadowing. When a block parameter is defined 
 
 
 
-
-
