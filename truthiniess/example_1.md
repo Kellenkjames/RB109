@@ -10,9 +10,9 @@ end
 ```
 # Written Response:
 
-The local variable `a` is initialized and assigned to the String `"Hello"` on line 4. The `if...else` statements executes a block of code if a specified condition is true. `a` is evaluated for truthiness on line 5; since `a` references the String `"Hello"`; this evaluates as truthy and the code within the block is executed.
+The local variable `a` is initialized and assigned to the String `"Hello"` on line 4. The `if...else` statement on lines 5-9 will execute the code for the first statement that evaluates as truthy. `a` is checked for truthiness on line 5. Since `a` is assigned to a String `"Hello"`; this evaluates as truthy. 
 
-Within the block; the `puts` method is called on line 6 with the String; `"Hello is Truthy"` is passed to it as an argument; the output is the String; `"Hello is Truthy"` and the return value of the method is `nil`.
+The code within the `if` statement will execute which results in the `puts` method invocation passing in the String `"Hello is Truthy"` as an argument; this outputs the String `"Hello is Truthy"` and returns `nil`.
 
-This problem demonstrates how Ruby evaluates truthiness. Everything in Ruby, with the exception of `false` and `nil` is considered truthy. In addition, truthiness is not the same as the boolean object `true`. This means we can use any expression in a conditional. Expressions do not have to directly use the `true` or `false` objects.
+This problem demonstrates how Ruby evaluates for truthiness. Everything in Ruby with the exception of `false` and `nil` evaluates as truthy. Truthiness allows Ruby to evaluate any expression in a conditional statement without the object having to be equal to the booleans `true` or `false`.
 
