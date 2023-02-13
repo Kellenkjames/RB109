@@ -20,7 +20,7 @@ The local variable `s` is initialized and assigned to the String `'hello'` on li
 Within the `fix` the method definition; the local variable `value` references the String `'hello'` and is reassigned to the `upcase!` method invocation on `value`; this returns the String `'HELLO'`.
 `value` invokes the `concat` method and passes the String `('!')` in as an argument; this returns the String `'HELLO!'`.
 
-`s` returns the String  `HELLO!`; Since `s` is reassigned and mutated at the same time within the `fix` method definition; the object is modified in place and it changes the object outside of the method definition.
-`t` returns the String `'HELLO!'`; the return value of the `fix` method invocation.
+`s` now references the String `HELLO!`; Since `s` is reassigned and mutated at the same time; it will affect the original object outside of the method.
+`t` now references the return value of the `fix` method invocation which is the String `'HELLO!'`.
 
 This problem demonstrates object passing and mutating methods; specifically; reassigning an object to a mutating method. When a mutable object is passed into a method invocation and the object is reassigned to mutating method; it will affect the original object outside of the method. In this example, we can say that Ruby acts as "pass by reference."
