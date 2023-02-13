@@ -23,5 +23,5 @@ The return value of the `test` method invocation is the Array `["I like the lett
 
 If we called `map!` instead of `map` this would mutate `a` from inside the method and affect the object outside of the method.
 
-This problem demonstrates object passing. In this example, Ruby acts like "pass-by-value". Since the original object was passed into the method and a non-mutating method was called on the object; the original object outside of the method was not affected. Therefore, we assume a "copy" of the object was passed into the method.
+This problem demonstrates object passing. In this example, Ruby acts like "pass-by-value". Arrays are mutable objects. Since the original object was passed into the method and a non-mutating method was called on the object; the original object outside of the method was not affected.
 

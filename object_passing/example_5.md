@@ -16,8 +16,8 @@ The local variable `b` is initialized and assigned to the Integer `7.3` on line 
 `a` is reassigned to `b` on line 6.
 `b` is reassigned to `b` + `1.1` on line 7.
 
-Since `a` is now assigned to `b` and `b` is assigned to the Integer `7.3`; `a` returns the Integer `7.3`.
-Since `b` is now assigned to `b` + `1.1`; this translates to `7.3 + 1.1`; therefore; `b` returns the Integer `8.4`.
+Since `a` is now assigned to the reference of `b` and `b` is assigned to the Integer `7.3`; `a` returns the Integer `7.3`.
+Since `b` is now assigned to the reference of `b` + `1.1`; this translates to `7.3 + 1.1`; therefore; `b` returns the Integer `8.4`.
 
-This problem demonstrates reassignment and immutable objects. Integers are immutable objects. If you attempt to change an immutable object, you won't succeed -- at best, you can create a new object, and bind a variable to that object with assignment. In this example, one of the variables is reassigned which creates a new reference to the Integer object.
+This problem demonstrates reassignment and immutable objects. Integers are immutable objects. If you attempt to change an immutable object, you won't succeed -- at best, you can create a new object, and bind a variable that object with assignment. In this example, one of the variables is reassigned which creates a new reference to the Integer object.
 
