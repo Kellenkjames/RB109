@@ -14,7 +14,7 @@ p new_array
 
 The local variable `arr` is initialized and assigned to the Array `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` on line 4. The local variable `new_array` is initialized and assigned to the `map` method invocation on `arr`.
 
-The `do...end` alongside the `map` method invocation defines a block on lines 6-9. Within the block; the parameter `n` represents the current element of `arr`. The expression `n > 1` is evaluated for each `n` in `arr`; this returns a new Array of boolean objects; `[false, true, true, true, true, true, true, true, true, true]`.
+The `do...end` alongside the `map` method invocation defines a block on lines 6-9. Within the block; the parameter `n` represents the current element of `arr`. The expression `n > 1` is evaluated on each `n` in `arr`; this returns a new Array of boolean objects; `[false, true, true, true, true, true, true, true, true, true]`.
 
 The `puts` method invocation passes in the reference of `n` as an argument; this outputs each Array element `[false, true, true, true, true, true, true, true, true, true]` on a newline and returns `nil` on line 8.
 

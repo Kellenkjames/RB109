@@ -2,15 +2,15 @@
 
 ```ruby
 a = "hello"
-[1, 2, 3].map { |num| a}
+[1, 2, 3].map { |num| a }
 ```
 # Written Response:
 
 The local variable `a` is initialized and assigned to the String `"hello"` on line 4. The `map` method is called on the Array literal `[1, 2, 3]` on line 5.
 
-The `{}` alongside the `map` method defines a block and introduces a new scope. Within the block; the parameter `num` represents each element in `arr`.
+The `{}` alongside the `map` method invocation defines a block and introduces a new scope. Within the block; the parameter `num` represents each element in `arr`.
 
-Since `a` was initialized in the outer scope; the reference of `a`; which is the String `"hello"` is passed to the block for each `num`; this returns a new Array; `["hello", "hello", "hello"]`.
+Since `a` was initialized in the outer scope; the reference of `a`; which is the String `"hello"`. The block is called on each `num`; this returns a new Array; `["hello", "hello", "hello"]`.
 
 This problem demonstrates behaviors of the `map` method and local variable scope. When a variable is initialized from outside of a block; the variable is accessible from inside of the block. The `map` method calls the block on each element and returns a new Array whose elements are the return values of the block.
 
