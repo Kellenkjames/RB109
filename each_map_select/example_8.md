@@ -15,6 +15,6 @@ The local variable `arr` is initialized and assigned to the Array `[1, 2, 3, 4, 
 
 The `do...end` alongside the `map` method defines a block on lines 6-8. Within the block; the parameter `n` represents the current element of `arr`. The expression `n > 1` is evaluated for each `n` in `arr`; Since this expression evaluates for truthiness; the `map` method will return the Array `[false, true, true, true, true, true, true, true, true, true]`.
 
-The `p` method invocation passes `new_array` in as an argument on line 10; the output is the Array `[false, true, true, true, true, true, true, true, true, true]` and the return value is the same object.
+The `p` method invocation passes in the reference of `new_array` as an argument on line 10; the output is the Array `[false, true, true, true, true, true, true, true, true, true]` and the return value is the same object.
 
 This problem demonstrates the behaviors of the `map` method. `map` calls the block with each element of `self` and returns a new Array whose elements are the return values from the block.

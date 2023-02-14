@@ -18,6 +18,6 @@ The `do...end` alongside the `map` method invocation defines a block on lines 6-
 
 The `puts` method invocation passes in the reference of `n` as an argument; this outputs each Array element `[false, true, true, true, true, true, true, true, true, true]` on a newline and returns `nil` on line 8.
 
-The `p` method invocation passes in the reference `new_array` as an argument; this outputs and returns the Array element `[false, true, true, true, true, true, true, true, true, true]`.
+The `p` method invocation passes in the reference of `new_array` as an argument; this outputs and returns the Array `[false, true, true, true, true, true, true, true, true, true]`.
 
 This problem demonstrates behaviors of `map`. The `map` method calls the block on each element and returns a new Array whose elements are the return values of the block.
