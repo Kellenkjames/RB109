@@ -13,8 +13,8 @@ The local variable `a` is initialized and assigned to the Array `[1, 2, 3, 4]` o
 The local variable `b` is initialized and assigned to `a` on line 5.
 The local variable `c` is initialized and assigned to the `uniq` method invocation on `a`.
 
-Since `a` is assigned to the Array `[1, 2, 3, 4]`; this is the return value.
-Since `b` is assigned to the reference of `a`; the return value is the same as `a`; the Array `[1, 2, 3, 4]`.
+Since `a` is not changed the in the program; it references the Array `[1, 2, 3, 4]`.
+Since `b` is assigned to the reference of `a`; it references the Array `[1, 2, 3, 4]`.
 
 `c` will return a *new* Array containing elements from the original object; `[1, 2, 3, 4]`; that are not duplicates. In this case, it will return a new array with the *same* elements as the original object. If the last line was `c = a.uniq!`; this would mutate the original object in place instead of returning a new array.
 

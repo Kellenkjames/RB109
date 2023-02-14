@@ -18,8 +18,8 @@ The local variable `a` is initialized and assigned to the Array `['a', 'b', 'c']
 
 The `{}` alongside the `map` method invocation defines a block on line 5. Within the block; the parameter `letter` represents the current element of `a`; the block will be called for each `letter` in `a`. This returns a new Array whose elements are the return values from the block: `["I like the letter: a", "I like the letter: b", "I like the letter: c"]`;
 
-Since `a` is not mutated from inside the method; it returns the original object; the Array `['a', 'b', 'c']`.
-The return value of the `test` method invocation is the Array `["I like the letter: a", "I like the letter: b", "I like the letter: c"]`. 
+Since `a` is not mutated from inside the method; it references the original object; the Array `['a', 'b', 'c']`.
+The return value of the `test` method invocation is the Array `["I like the letter: a", "I like the letter: b", "I like the letter: c"]`.
 
 If we called `map!` instead of `map` this would mutate `a` from inside the method and affect the object outside of the method.
 

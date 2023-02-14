@@ -15,13 +15,13 @@ puts b
 
 The method definition `plus` accepts parameters `x` and `y` on line 4.
 
-The local variable `a` is initialized and assigned to the Integer `3` on line 8. The local variable `b` is initialized and assigned to the `plus` method invocation while passing in `a` as the first argument and the Integer `2` in as the second argument.
+The local variable `a` is initialized and assigned to the Integer `3` on line 8. The local variable `b` is initialized and assigned to the `plus` method invocation while passing in the reference of `a` as the first argument and the Integer `2` in as the second argument.
 
 Within the `plus` method definition; the local variable `x` references the Integer `3` and the local variable `y` references the Integer `2`.
 `x` is reassigned to `3 + 2`; this expression returns the Integer `5` on line 5.
 
-Since `a` was reassigned from within the `plus` method definition; the original object was unchanged; therefore; the return value is the Integer `3`.
-`b` returns the Integer `5`; the return value from the `plus` method invocation.
+Since `a` was reassigned from within the `plus` method definition; the original object was unchanged; therefore; `a` references the original object; the Integer `3`.
+`b` references the Integer `5`; the return value of the `plus` method invocation.
 
 The `puts` method invocation passes the reference of `a` in as an argument on line 11. The output is the Integer `3` and the method returns `nil`.
 The `puts` method invocation passes the reference of `b` in as an argument on line 12. The output is the Integer `5` and the method returns `nil`.

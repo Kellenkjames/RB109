@@ -10,7 +10,7 @@ a = "not there"
 # Written Response:
 
 The local variable `a` is initialized and assigned to the String `"hi there"` on line 4.
-The local variable `b` is initialized and assigned to `a` on line 5. 
+The local variable `b` is initialized and assigned to `a` on line 5.
 `a` is reassigned to the String `"not there"` on line 6.
 
 Since `a` is now assigned to the String `"not there"`; this is what is output.
