@@ -14,8 +14,7 @@ example('hello')
 ```
 # Written Response:
 
-The method definition `example` accepts `str` as a parameter on line 4.
-
+The `example` method definition accepts `str` as a parameter on line 4.
 The `example` method invocation passes in the String literal `'hello'` as an argument on line 13.
 
 Within the `example` method body; the local variable `i` is initialized and assigned to the Integer `3` on line 5. The `do...end` alongside the `loop` method invocation on lines 6-10 defines a block, within which; the `puts` method invocation passes in the reference of `str` as an argument on line 7. The reference of `str` is the String `'hello'`; therefore; the output of the `puts` method invocation is the String `'hello'` three times; each String printed on a newline.

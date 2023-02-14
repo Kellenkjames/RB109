@@ -13,9 +13,10 @@ t = fix(s)
 ```
 # Written Response:
 
-The method definition `fix` accepts `value` as a parameter on line 4.
+The `fix` method definition accepts `value` as a parameter on line 4.
 
-The local variable `s` is initialized and assigned to the String `'hello'` on line 9. The local variable `t` is initialized and assigned to the `fix` method invocation which passes `s` in as an argument on line 10.
+The local variable `s` is initialized and assigned to the String `'hello'` on line 9. 
+The local variable `t` is initialized and assigned to the `fix` method invocation passing in `s` in as an argument on line 10.
 
 Within the `fix` the method definition; the local variable `value` references the String `'hello'` and is reassigned to the `upcase!` method invocation on `value`; this returns the String `'HELLO'`.
 `value` invokes the `concat` method and passes the String `('!')` in as an argument; this returns the String `'HELLO!'`.

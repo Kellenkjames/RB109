@@ -15,7 +15,9 @@ puts "Your total is #{sum}"
 ```
 # Written Response:
 
-The local variable `arr` is initialized and assigned to the Array `[1, 2, 3, 4]` on line 4. The local variable `counter` is initialized and assigned to the Integer `0` on line 5. The local variable `sum` is initialized and assigned to the Integer `0` on line 6.
+The local variable `arr` is initialized and assigned to the Array `[1, 2, 3, 4]` on line 4. 
+The local variable `counter` is initialized and assigned to the Integer `0` on line 5. 
+The local variable `sum` is initialized and assigned to the Integer `0` on line 6.
 
 The `do...end` alongside the `loop` method invocation on lines 8-12 defines a block and introduces a new scope; within which; `sum` adds its initialized value; the Integer `0` to the value of each `arr` index and reassigns the total back to `sum` on line 9. Each array index is accessed with `counter`; which begins at the Integer `0` and increments by the Integer `1` on each successive iteration.
 
