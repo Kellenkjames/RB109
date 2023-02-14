@@ -11,12 +11,15 @@ p a
 ```
 # Written Response:
 
-The local variable `a` is initialized and assigned to the String `'hello'` on line 8. The `a_method` invocation passes in the reference of `a` in as an argument on line 9.
+The `a_method` method definition accepts `string` as a parameter on line 4.
 
-Within the `a_method` method definition; the local variable `string` references the String `'hello'` and appends the String `' world'`; this returns the String `'hello world'`.
+The local variable `a` is initialized and assigned to the String `'hello'` on line 8.
+The `a_method` invocation passes in the reference of `a` as an argument on line 9.
 
-`a` now references the String `'hello world'`; since `a` was mutated within the `a_method` method definition; it affects the original object outside of the method.
+Within the `a_method` method body; the local variable `string` references the String `'hello'` and appends the String `' world'`; this returns the String `'hello world'`.
+
+`a` now references the String `'hello world'`; since `a` was mutated within the `a_method` method body; this affects the original object outside of the method.
 The `p` method invocation passes in the reference of `a` as an argument on line 10; this outputs and returns the String `'hello world'`.
 
-This problem demonstrates object passing and mutating methods. When passing a mutable object to a method invocation and mutating the object from within the method; this will affect the original object outside of the method. In this example, we can say Ruby acts as "pass by reference."
+This problem demonstrates object passing and mutating methods. When passing a mutable object as an argument to a method and mutating the object from within the method body; this will affect the original object outside of the method. In this example, we can say Ruby acts like "pass by reference."
 
