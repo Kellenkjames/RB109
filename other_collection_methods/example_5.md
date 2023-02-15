@@ -11,13 +11,12 @@ The `each_with_index` method invocation is called on the Array literal `[1, 2, 3
 
 The `do...end` alongside the `each_with_index` method invocation defines a block on lines 4-6. The block parameters `num` and `index` represent the current element and index of each object in the Array literal `[1, 2, 3]'`;
 
-Within the block; the `puts` method invocation passes in a String as an argument while using interpolation to pass in the reference of `num` and `index` for each element in the Array. This outputs the following Strings, each printed on a newline:
+Within the block; the `puts` method invocation passes in a String as an argument while using interpolation to pass in the reference of `num` and `index` for each element in the Array. This outputs each String in the Array literal `[1, 2, 3]` on a newline.
 
 The index of `1` is `0`.
 The index of `2` is `1`.
 The index of `3` is `2`.
 
-The output of the `each_with_index` method is `[1, 2, 3]` and the return value is `nil`.
+The return value of `each_with_index` method is `[1, 2, 3]`.
 
-This problem demonstrates the behavior of the `each_with_index` method. The `each_with_index` method iterates over array indexes and returns the calling object; regardless of what operations are called within the block of the method.
-
+This problem demonstrates the behavior of the `each_with_index` method. The `each_with_index` method iterates over the collection and calls the block for each element; the return value is the calling object.
